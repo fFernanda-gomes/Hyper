@@ -1,9 +1,9 @@
-import { SignIn } from "./screens/SignIn/SignIn"
+import { Home } from "./pages/Home"
 
 export function App() {
   return (
     <>
-      <SignIn />
+      <Home />
     </>
   )
 }

@@ -1,6 +1,6 @@
 import { GlobalStyle } from "../../styles/Global" 
 import { Header } from "../../components/Header/Header"
-import { ButtonForm } from "../../components/buttonForm/Button"
+import { ButtonForm } from "../../components/ButtonForm/Button"
 
 import logo from "../../assets/logo.svg"
 import email from  "../../assets/iconEmail.svg"
@@ -13,7 +13,7 @@ import
   InputsContainer, 
   LoginArea, 
   MainContainer 
-} from "./SignIn.styles"
+} from "./styles"
 
 export function SignIn() {
   return(

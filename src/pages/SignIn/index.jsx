@@ -12,6 +12,7 @@ import
   Body,
   InputsContainer, 
   LoginArea, 
+  LogoContainer, 
   MainContainer 
 } from "./styles"
 
@@ -26,7 +27,9 @@ export function SignIn() {
         
         <form action="">
           <InputsContainer>
-            <img src={logo} alt="" />
+            <LogoContainer>
+              <img src={logo} alt="" />
+            </LogoContainer>
 
             <LoginArea>
               <img src={email} alt="" width={24} height={24}/>

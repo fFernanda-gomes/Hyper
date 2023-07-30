@@ -61,15 +61,16 @@ export const MainContainer = styled.main`
       display: flex;
       padding-bottom: 46px;
     }
-
-    input{
-
-    }
   }
 ` 
 
 export const InputsContainer = styled.div`
+`
 
+export const LogoContainer = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 `
 
 export const LoginArea = styled.div`
@@ -115,6 +116,7 @@ export const Adds = styled.div`
   }
 
   a {
+    margin: 0;
     font-size: 12px;
     color:rgba(255, 255, 255, 0.6);
   }

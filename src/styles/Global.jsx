@@ -1,6 +1,6 @@
-import { createGlobalStyle } from "styled-components";
-import logoMobile from "../assets/loginMobile.svg"
-import bgWeb from "../assets/bgLoginWeb.svg"
+import { createGlobalStyle } from 'styled-components'
+import logoMobile from '../assets/loginMobile.svg'
+import bgWeb from '../assets/bgLoginWeb.svg'
 
 export const GlobalStyle = createGlobalStyle`
   * {

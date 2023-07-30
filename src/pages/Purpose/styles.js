@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Main = styled.main`
   padding: 0 48px 145px 48px;
@@ -12,7 +12,7 @@ export const Title = styled.h1`
   margin-bottom: 14px;
 
   span {
-    color: #36A7DB;
+    color: #36a7db;
   }
 `
 

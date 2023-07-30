@@ -1,11 +1,11 @@
-import { Purpose } from "./pages/Purpose"
-import { Home } from "./pages/Home"
-import { SignIn } from "./pages/SignIn"
+import { ThemeProvider } from 'styled-components'
+import theme from './styles/theme/theme'
+import { Home } from './pages/Home'
 
 export function App() {
   return (
-    <>
-      <SignIn />
-    </>
+    <ThemeProvider theme={theme}>
+      <Home />
+    </ThemeProvider>
   )
 }

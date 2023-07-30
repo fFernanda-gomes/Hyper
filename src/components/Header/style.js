@@ -1,18 +1,18 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
   padding: 32px 48px 72px 48px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   font-family: 'Montserrat', sans-serif;
 
   @media (min-width: 950px) {
     justify-content: center;
-    padding-top: 64px; 
+    padding-top: 64px;
     padding-bottom: 112px;
-    
+
     .menu-burger {
       display: none;
     }
@@ -89,4 +89,4 @@ export const NavContainer = styled.nav`
   }
 `
 
-//shorthand: top right bottom left
+// shorthand: top right bottom left

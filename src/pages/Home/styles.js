@@ -1,9 +1,9 @@
-import styled from "styled-components";
-import bgHomeMobile from "../../assets/bgHomeMobile.png"
+import styled from 'styled-components'
+import bgHomeMobile from '../../assets/bgHomeMobile.png'
 
 export const Body = styled.body`
   background: url(${bgHomeMobile});
-  background-position: 100%;
+  background-size: cover;
   padding-bottom: 139px;
 `
 
@@ -20,7 +20,7 @@ export const LogoContainer = styled.div`
 
   h2 {
     font-size: 0.75rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; //mudar pro global theme
     font-weight: 600;
     letter-spacing: 10px;
     margin-block: 8px 64px;
@@ -33,7 +33,7 @@ export const IntroducaoContainer = styled.div`
   margin-bottom: 112px;
 
   p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; //mudar pro global theme
     font-size: 0.75rem;
     font-weight: 400;
   }
@@ -42,23 +42,23 @@ export const IntroducaoContainer = styled.div`
 export const BarraVertical = styled.div`
   width: 10px;
   height: 76px;
-  background: #36A7DB;
+  background: ${({ theme }) => theme.colors.primary_medium};
   margin-right: 26px;
 `
 
 export const DiferencialContainer = styled.div`
   margin-top: 136px;
-  color: white;
+  color: ${({ theme }) => theme.colors.white};
 `
 
 export const ThirdTitle = styled.h3`
-  color: white;
+  color: ${({ theme }) => theme.colors.white};
   font-size: 30px;
   font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif; //mudar pro global theme
 
   span {
-    color: #36A7DB;
+    color: ${({ theme }) => theme.colors.primary_medium};
   }
 `
 
@@ -69,20 +69,20 @@ export const ContainerFlex = styled.div`
 `
 
 export const Paragrafo = styled.p`
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif; //mudar pro global theme
   font-weight: 400;
   font-size: 12px;
   padding-block: 32.01px;
 `
 
 export const ParagrafoBarra = styled.p`
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif; //mudar pro global theme
   font-weight: 400;
   font-size: 12px;
 `
 
 export const ParagrafoContainer = styled.p`
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif; //mudar pro global theme
   font-weight: 400;
   font-size: 12px;
 `
@@ -90,7 +90,7 @@ export const ParagrafoContainer = styled.p`
 export const BarraHorizontal = styled.div`
   width: 24px;
   height: 2px;
-  background: #36A7DB;
+  background: ${({ theme }) => theme.colors.primary_medium};
   margin-right: 10px;
 `
 
@@ -101,8 +101,8 @@ export const ContainerText = styled.div`
   padding: 16px;
   margin-block: 32.01px;
 
-  span{
-    color: #36A7DB;
+  span {
+    color: ${({ theme }) => theme.colors.primary_medium};
     font-weight: 700;
   }
 `

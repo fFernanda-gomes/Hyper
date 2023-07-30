@@ -1,30 +1,29 @@
-import { GlobalStyle } from "../../styles/Global" 
-import { Header } from "../../components/Header/Header"
-import { ButtonForm } from "../../components/ButtonForm/Button"
+import { GlobalStyle } from '../../styles/Global'
+import { Header } from '../../components/Header'
+import { ButtonForm } from '../../components/ButtonForm'
 
-import logo from "../../assets/logo.svg"
-import email from  "../../assets/iconEmail.svg"
-import passwordIcon from "../../assets/password-icon.svg"
+import logo from '../../assets/logo.svg'
+import email from '../../assets/iconEmail.svg'
+import passwordIcon from '../../assets/password-icon.svg'
 
-import 
-{ 
+import {
   Adds,
   Body,
-  InputsContainer, 
-  LoginArea, 
-  LogoContainer, 
-  MainContainer 
-} from "./styles"
+  InputsContainer,
+  LoginArea,
+  LogoContainer,
+  MainContainer,
+} from './styles'
 
 export function SignIn() {
-  return(
+  return (
     <Body>
       <Header />
 
       <MainContainer>
         <h1>Olá</h1>
         <p>É bom te ver de novo</p>
-        
+
         <form action="">
           <InputsContainer>
             <LogoContainer>
@@ -32,15 +31,15 @@ export function SignIn() {
             </LogoContainer>
 
             <LoginArea>
-              <img src={email} alt="" width={24} height={24}/>
+              <img src={email} alt="" width={24} height={24} />
               <input type="text" placeholder="E-mail" />
             </LoginArea>
 
             <LoginArea>
-              <img src={passwordIcon} alt="" width={24} height={24}/>
+              <img src={passwordIcon} alt="" width={24} height={24} />
               <input type="password" placeholder="Senha" />
             </LoginArea>
-            
+
             <Adds>
               <div>
                 <input type="checkbox" name="" id="checkbox" />
@@ -49,7 +48,7 @@ export function SignIn() {
 
               <a href="">Esqueceu a senha?</a>
             </Adds>
-          </InputsContainer> 
+          </InputsContainer>
         </form>
 
         <ButtonForm />

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Body = styled.body`
   /* @media (min-width: 950px) {
@@ -53,7 +53,8 @@ export const MainContainer = styled.main`
     padding-block: 47px 64px;
     margin-inline: auto;
 
-    h1, p {
+    h1,
+    p {
       display: none;
     }
 
@@ -62,10 +63,9 @@ export const MainContainer = styled.main`
       padding-bottom: 46px;
     }
   }
-` 
-
-export const InputsContainer = styled.div`
 `
+
+export const InputsContainer = styled.div``
 
 export const LogoContainer = styled.div`
   display: flex;
@@ -77,7 +77,7 @@ export const LoginArea = styled.div`
   width: 279px;
   height: 48px;
   border: 2px solid #858585;
-  background: #5F5F5F;
+  background: #5f5f5f;
 
   padding: 12px;
   display: flex;
@@ -94,7 +94,7 @@ export const LoginArea = styled.div`
       font-size: 16px;
       font-weight: 500;
       font-family: 'Poppins', sans-serif;
-    } 
+    }
   }
 `
 
@@ -118,6 +118,6 @@ export const Adds = styled.div`
   a {
     margin: 0;
     font-size: 12px;
-    color:rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
   }
 `

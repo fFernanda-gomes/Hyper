@@ -17,7 +17,7 @@ export function Header() {
           <img src={logo} alt="" width={28} height={32} className="logo img" />
         </NavLink>
 
-        <NavLink to="/SignIn">
+        <NavLink to="/Login">
           <User color="#fff" fontSize={38} className="user" />
         </NavLink>
       </div>
@@ -28,15 +28,15 @@ export function Header() {
         </NavLink>
 
         <NavContainer>
-          <NavLink to="/SignIn">objetivos</NavLink>
-          <NavLink to="">público</NavLink>
-          <NavLink to="">equipamentos</NavLink>
-          <NavLink to="">funcionamento</NavLink>
-          <NavLink to="">download</NavLink>
-          <NavLink to="">bibliografia</NavLink>
+          <NavLink to="/Objetivos">objetivos</NavLink>
+          <NavLink to="/Publico">público</NavLink>
+          <NavLink to="/Equipamentos">equipamentos</NavLink>
+          <NavLink to="/Funcionamento">funcionamento</NavLink>
+          <NavLink to="/Download">download</NavLink>
+          <NavLink to="/Bibliografia">bibliografia</NavLink>
         </NavContainer>
 
-        <NavLink to="/SignIn">
+        <NavLink to="/Login">
           <User color="#fff" fontSize={38} className="user" />
         </NavLink>
       </div>

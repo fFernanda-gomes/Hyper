@@ -15,7 +15,7 @@ import {
   MainContainer,
 } from './styles'
 
-export function SignIn() {
+export function Login() {
   return (
     <Body>
       <Header />

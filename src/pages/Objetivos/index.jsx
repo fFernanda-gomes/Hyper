@@ -4,7 +4,7 @@ import { Container, Main, Title } from './styles'
 
 import peca from '../../assets/peca.svg'
 
-export function Purpose() {
+export function Objetivos() {
   return (
     <body>
       <Header />

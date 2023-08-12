@@ -46,7 +46,6 @@ export const Containers = styled.div`
   }
 `
 
-
 export const Title = styled.h1`
   color: ${({ theme }) => theme.colors.white};
   font-family: 'Montserrat', sans-serif;

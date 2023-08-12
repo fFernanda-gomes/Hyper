@@ -1,12 +1,15 @@
 import { GlobalStyle } from '../../styles/Global'
 import { Header } from '../../components/Header'
-import { Container, Main, Title } from './styles'
 
 import peca from '../../assets/peca.svg'
+import brain from '../../assets/brain.png'
+import { ArrowRight } from '@phosphor-icons/react'
+
+import { Body, Button, Container, Containers, Main, Title } from './styles'
 
 export function Objetivos() {
   return (
-    <body>
+    <Body>
       <Header />
 
       <Main>
@@ -15,53 +18,65 @@ export function Objetivos() {
           principais
         </Title>
 
-        <Container>
-          <img src={peca} alt="" />
-          <h2>Title here and here</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. amet, consectetur
-            adipiscing elit.
-          </p>
-          <button></button>
-        </Container>
+        <Containers>
+          <Container className="first">
+            <img src={peca} alt="" className="firstImg" />
+            <h2 className="firstTitle">Title here and here</h2>
+            <p className="firstP">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. amet,
+              consectetur adipiscing elit.
+            </p>
+            <Button>
+              <ArrowRight size={28} color="#ffffff" weight="light" />
+            </Button>
+          </Container>
 
-        <Container>
-          <h2>Title here and here</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. amet, consectetur
-            adipiscing elit.
-          </p>
-          <button></button>
-        </Container>
+          <div className="grid">
+            <Container className="second">
+              <h2>Title here and here</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. amet,
+                consectetur adipiscing elit.
+              </p>
+              <Button>
+                <ArrowRight size={28} color="#ffffff" weight="light" />
+              </Button>
+            </Container>
 
-        <Container>
-          <h2>Title here and here</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. amet, consectetur
-            adipiscing elit.
-          </p>
-          <button></button>
-        </Container>
+            <Container className="third">
+              <h2>Title here and here</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. amet,
+                consectetur adipiscing elit.
+              </p>
+              <Button>
+                <ArrowRight size={28} color="#ffffff" weight="light" />
+              </Button>
+            </Container>
 
-        <Container>
-          <h2>Title here and here</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. amet, consectetur
-            adipiscing elit.
-          </p>
-          <button></button>
-          <img src={peca} alt="" />
-        </Container>
+            <Container className="fourth">
+              <h2>Title here and here</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod.
+              </p>
+              <Button>
+                <ArrowRight size={28} color="#ffffff" weight="light" />
+              </Button>
+              <img src={brain} alt="" className="fourthImg" />
+            </Container>
+          </div>
+        </Containers>
       </Main>
       <GlobalStyle />
-    </body>
+    </Body>
   )
 }

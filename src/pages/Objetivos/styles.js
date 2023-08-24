@@ -41,8 +41,8 @@ export const Main = styled.main`
 
 export const Containers = styled.div`
   @media (min-width: 950px) {
-    display: flex;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 `
 
@@ -59,98 +59,17 @@ export const Title = styled.h1`
 `
 
 export const Container = styled.div`
-  background: rgba(239, 239, 239, 0.2);
-  width: 17.4375rem;
-  padding: 2rem;
-  justify-content: left;
-  margin-bottom: 4rem;
-  border-radius: 12px;
+  color: white;
+  border: 1px solid red;
+`
 
-  .firstImg {
-    margin-top: -4.4rem;
-  }
-
-  .firstTitle {
-    font-size: 1.25rem;
-  }
-
-  .firstP {
-    font-size: 0.75rem;
-  }
-
-  h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    color: ${({ theme }) => theme.colors.white};
-    font-size: 1.5rem;
-    line-height: normal;
-  }
-
-  p {
-    margin-top: 1rem;
-    color: ${({ theme }) => theme.colors.white};
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.9rem;
-    font-weight: 400;
-    line-height: 1.375rem;
-    text-align: justify;
-  }
-
-  .fourthImg {
-    margin: 3rem 0 0rem 3.5rem;
-  }
-
-  @media (min-width: 950px) {
-    padding: 1.5rem;
-
-    &.first {
-      width: 328px;
-      padding: 1.5rem;
-    }
-
-    &.first,
-    &.second,
-    &.third,
-    &.fourth {
-      h2 {
-        font-size: 1.5rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-      }
-
-      p {
-        font-size: 0.9rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.375rem;
-        text-transform: capitalize;
-      }
-    }
-
-    .firstImg {
-      margin-top: -4rem;
-    }
-
-    &.second,
-    &.third {
-      width: 22.75rem;
-      height: 13.8125rem;
-    }
-
-    &.fourth {
-      width: 47.5rem;
-      height: 13.75rem;
-
-      p {
-        width: 29.75rem;
-      }
-
-      img {
-        margin: 0;
-      }
-    }
-  }
+export const FirstContainer = styled(Container)`
+  grid-row: 1 / 3;
+`
+export const SecondContainer = styled(Container)``
+export const ThirdContainer = styled(Container)``
+export const FourthContainer = styled(Container)`
+  grid-column: 2 / 4;
 `
 
 export const Button = styled.button`

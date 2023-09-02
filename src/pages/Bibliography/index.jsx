@@ -1,3 +1,10 @@
+import { Header } from "../../components/Header";
+
 export function Bibliography() {
-  return <h1>Bibliografia</h1>
+  return (
+    <>
+      <Header />
+      <h1>Bibliografia</h1>
+    </>
+   ) 
 }

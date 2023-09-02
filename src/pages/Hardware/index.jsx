@@ -1,3 +1,8 @@
 export function Hardware() {
-  return <h1>Equipamentos</h1>
+  return ( 
+    <>
+      <Header />
+      <h1>Equipamentos</h1>
+    </>
+  ) 
 }

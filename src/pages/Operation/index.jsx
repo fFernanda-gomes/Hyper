@@ -1,3 +1,10 @@
+import { Header } from "../../components/Header"
+
 export function Operation() {
-  return <h1>Funcionamento</h1>
+  return( 
+    <>
+      <Header />
+      <h1>Funcionamento</h1>
+    </>
+  )
 }

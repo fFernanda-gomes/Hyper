@@ -14,9 +14,11 @@ import {
 function InputFormMobile(
   type,
   PlaceHolder,
+  src
 ) {
   return (
    <div>
+    <img src={src} alt="" />
     <input type={type} placeholder={PlaceHolder}/>
    </div>
   )

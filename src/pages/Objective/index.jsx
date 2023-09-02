@@ -7,7 +7,7 @@ import { ArrowRight } from '@phosphor-icons/react'
 
 import { Body, Button, FirstContainer, SecondContainer, ThirdContainer, FourthContainer, Containers, Main, Title } from './styles'
 
-export function Objetivos() {
+export function Objective() {
   return (
     <Body>
       <Header />

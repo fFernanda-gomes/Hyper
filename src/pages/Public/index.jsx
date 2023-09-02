@@ -1,3 +1,10 @@
+import { Header } from "../../components/Header"
+
 export function Public() {
-  return <h1>Público</h1>
+  return(
+    <>
+      <Header />
+      <h1>Público</h1>
+    </>
+  ) 
 }

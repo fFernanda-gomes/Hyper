@@ -3,6 +3,7 @@ import theme from './styles/theme/theme'
 
 import { BrowserRouter } from 'react-router-dom'
 import { Router } from './Router'
+import { GlobalStyle } from './styles/Global'
 
 export function App() {
   return (
@@ -10,6 +11,7 @@ export function App() {
       <BrowserRouter>
         <Router />
       </BrowserRouter>
+      <GlobalStyle />
     </ThemeProvider>
   )
 }

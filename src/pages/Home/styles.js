@@ -1,10 +1,16 @@
 import styled from 'styled-components'
-import bgHomeMobile from '../../assets/bgHomeMobile.png'
+import bgHomeMobile from '../../assets/bgHomeMobile.svg'
+import bgHomeWeb from '../../assets/bgHomeWeb.svg'
 
 export const Body = styled.body`
+  padding-bottom: 139px;
   background: url(${bgHomeMobile});
   background-size: cover;
-  padding-bottom: 139px;
+
+  @media (min-width: 850px) {
+    background: url(${bgHomeWeb});
+    background-size: cover;
+  }
 `
 
 export const Main = styled.main`

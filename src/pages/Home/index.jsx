@@ -1,8 +1,8 @@
 import { Header } from '../../components/Header'
 import { GlobalStyle } from '../../styles/Global'
 
-import logoTitle from '../../assets/logoTitle.svg'
-import glasses from '../../assets/glassesHome.svg'
+import logoTitle from '../../assets/titleHyper.svg'
+// import glasses from '../../assets/glassesHome.svg'
 
 import {
   BarraHorizontal,
@@ -24,7 +24,6 @@ export function Home() {
   return (
     <Body>
       <Header />
-
       <Main>
         <LogoContainer>
           <img src={logoTitle} alt="" />
@@ -66,7 +65,7 @@ export function Home() {
             </ParagrafoContainer>
           </ContainerText>
 
-          <img src={glasses} alt="" />
+          {/* <img src={glasses} alt="" /> */}
         </DiferencialContainer>
         <GlobalStyle />
       </Main>

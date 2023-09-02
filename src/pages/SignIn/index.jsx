@@ -1,10 +1,7 @@
 import { GlobalStyle } from '../../styles/Global'
-import { Header } from '../../components/Header'
 import { ButtonForm } from '../../components/ButtonForm'
 
-import logo from '../../assets/logo.svg'
-import email from '../../assets/iconEmail.svg'
-import passwordIcon from '../../assets/password-icon.svg'
+import Logo from '../../assets/logo.svg'
 
 import {
   Adds,
@@ -18,8 +15,6 @@ import {
 export function SignIn() {
   return (
     <Body>
-      <Header />
-
       <MainContainer>
         <h1>Olá</h1>
         <p>É bom te ver de novo</p>
@@ -27,16 +22,16 @@ export function SignIn() {
         <form action="">
           <InputsContainer>
             <LogoContainer>
-              <img src={logo} alt="" />
+              <img src={Logo} alt="" />
             </LogoContainer>
 
             <LoginArea>
-              <img src={email} alt="" width={24} height={24} />
+              {/* <img src={email} alt="" width={24} height={24} /> */}
               <input type="text" placeholder="E-mail" />
             </LoginArea>
 
             <LoginArea>
-              <img src={passwordIcon} alt="" width={24} height={24} />
+              {/* <img src={passwordIcon} alt="" width={24} height={24} /> */}
               <input type="password" placeholder="Senha" />
             </LoginArea>
 

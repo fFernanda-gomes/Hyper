@@ -1,8 +1,5 @@
 import { GlobalStyle } from '../../styles/Global'
-import { Header } from '../../components/Header'
 
-import peca from '../../assets/peca.svg'
-import brain from '../../assets/brain.png'
 import { ArrowRight } from '@phosphor-icons/react'
 
 import { Body, Button, FirstContainer, SecondContainer, ThirdContainer, FourthContainer, Containers, Main, Title } from './styles'
@@ -10,8 +7,6 @@ import { Body, Button, FirstContainer, SecondContainer, ThirdContainer, FourthCo
 export function Objective() {
   return (
     <Body>
-      <Header />
-
       <Main>
         <Title>
           <span>Objetivos</span> <br />
@@ -20,7 +15,7 @@ export function Objective() {
 
         <Containers>
           <FirstContainer>
-            <img src={peca} alt="" className="firstImg" />
+            {/* <img src={peca} alt="" className="firstImg" /> */}
             <h2 className="firstTitle">Title here and here</h2>
             <p className="firstP">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

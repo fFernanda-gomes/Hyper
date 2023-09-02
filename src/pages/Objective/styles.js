@@ -1,13 +1,8 @@
 import styled from 'styled-components'
-import objetivosMobile from '../../assets/objetivosMobile.png'
+
 
 export const Body = styled.body`
-  background: url(${objetivosMobile});
-  background-size: cover;
-
-  @media (min-width: 950px) {
-    background-repeat: no-repeat;
-  }
+ 
 `
 
 export const Main = styled.main`

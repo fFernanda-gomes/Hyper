@@ -1,9 +1,9 @@
-import logo from '../../assets/logoHyper.png'
-
 import { HeaderContainer, NavContainer } from './style'
 import { NavLink } from 'react-router-dom'
 
 import { List, User } from '@phosphor-icons/react'
+
+import Logo from '../../assets/logo.svg'
 
 export function Header() {
   return (
@@ -14,7 +14,7 @@ export function Header() {
         </NavLink>
 
         <NavLink to="/">
-          <img src={logo} alt="" width={28} height={32} className="logo img" />
+          <img src={Logo} alt="" className="logo img" />
         </NavLink>
 
         <NavLink to="/Login">
@@ -24,7 +24,7 @@ export function Header() {
 
       <div className="web">
         <NavLink to="/">
-          <img src={logo} alt="" width={28} height={32} className="logo img" />
+          <img src={Logo} alt="" width={38} height={42} className="logo img" />
         </NavLink>
 
         <NavContainer>

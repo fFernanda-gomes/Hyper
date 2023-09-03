@@ -49,6 +49,11 @@ export const HeaderContainer = styled.header`
   }
 `
 
+export const Button = styled.button`
+  background: transparent;
+  border: none;
+`
+
 export const NavContainer = styled.nav`
   display: none;
 

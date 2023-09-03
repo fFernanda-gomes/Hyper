@@ -1,17 +1,47 @@
-import { HeaderContainer, NavContainer } from './style'
+import { Button, HeaderContainer, NavContainer } from './style'
 import { NavLink } from 'react-router-dom'
 
-import { List, User } from '@phosphor-icons/react'
+import { List, User, X } from '@phosphor-icons/react'
 
 import Logo from '../../assets/logo.svg'
+import { useState } from 'react'
 
 export function Header() {
+  const [abrirFechar, setAbrirFechar] = useState(false)
+
+  function handleAbrirFecharMenu() {
+    if (abrirFechar) {
+      setAbrirFechar(false)
+      return
+    }
+
+    setAbrirFechar(true)
+  }
+
   return (
     <HeaderContainer>
       <div className="mobile">
-        <NavLink to="/">
-          <List color="#fff" fontSize={42} weight="bold" className="list" />
-        </NavLink>
+        <div className="botao-menu">
+          <Button onClick={handleAbrirFecharMenu}>
+            {abrirFechar === true ? (
+              <X
+                size={32}
+                color="#fff"
+                fontSize={42}
+                weight="bold"
+                className="list"
+              />
+            ) : (
+              <List
+                size={32}
+                color="#fff"
+                fontSize={42}
+                weight="bold"
+                className="list"
+              />
+            )}
+          </Button>
+        </div>
 
         <NavLink to="/">
           <img src={Logo} alt="" className="logo img" />

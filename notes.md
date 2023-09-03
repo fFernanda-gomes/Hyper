@@ -15,4 +15,12 @@
   
   -- folder que vai ser criado
       routes --> vai ser onde as rotas da aplicação vão estar
+
+## Instalação do ESLINT
+    npm i -D eslint @rocketseat/eslint-config
+
+    -- .eslintrc.json
+        {
+            "extends": "@rocketseat/eslint-config/react"
+        }
              

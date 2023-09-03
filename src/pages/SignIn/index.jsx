@@ -11,6 +11,8 @@ import {
   LogoContainer,
   MainContainer,
 } from './styles'
+import { InputForm } from '../../components/Input'
+import { NavLink } from 'react-router-dom'
 
 export function SignIn() {
   return (
@@ -25,15 +27,18 @@ export function SignIn() {
               <img src={Logo} alt="" />
             </LogoContainer>
 
-            <LoginArea>
-              {/* <img src={email} alt="" width={24} height={24} /> */}
-              <input type="text" placeholder="E-mail" />
-            </LoginArea>
+            <InputForm />
+            <InputForm />
 
-            <LoginArea>
-              {/* <img src={passwordIcon} alt="" width={24} height={24} /> */}
+            {/* <LoginArea> */}
+            {/* <img src={email} alt="" width={24} height={24} /> */}
+            {/* <input type="text" placeholder="E-mail" /> */}
+            {/* </LoginArea> */}
+
+            {/* <LoginArea>
+              {/* <img src={passwordIcon} alt="" width={24} height={24} />
               <input type="password" placeholder="Senha" />
-            </LoginArea>
+            </LoginArea> */}
 
             <Adds>
               <div>
@@ -47,7 +52,7 @@ export function SignIn() {
         </form>
 
         <ButtonForm />
-        <a href="">Não possui uma conta?</a>
+        <NavLink to="/Cadastro">Não possui uma conta?</NavLink>
       </MainContainer>
       <GlobalStyle />
     </Body>

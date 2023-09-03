@@ -1,9 +1,9 @@
-import { Outlet } from "react-router-dom";
-import { Header } from "../../components/Header";
-import { Body } from "./style";
+import { Outlet } from 'react-router-dom'
+import { Header } from '../../components/Header'
+import { Body } from './style'
 
 export function DefaultLayout() {
-  return(
+  return (
     <Body>
       <Header />
       <Outlet />

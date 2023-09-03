@@ -1,9 +1,6 @@
 import styled from 'styled-components'
 
-
-export const Body = styled.body`
- 
-`
+export const Body = styled.body``
 
 export const Main = styled.main`
   padding: 0 3rem 5rem 3rem;
@@ -38,9 +35,9 @@ export const Containers = styled.div`
 export const Title = styled.h1`
   color: ${({ theme }) => theme.colors.white};
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.5625rem;
+  font-size: 1.875rem;
   font-weight: 700;
-  margin-bottom: 83px;
+  margin-bottom: 3.25rem;
 
   span {
     color: ${({ theme }) => theme.colors.primary_medium};
@@ -48,50 +45,59 @@ export const Title = styled.h1`
 `
 
 export const Container = styled.div`
-  color: white;
-  background: rgba(239, 239, 239, 0.20);
+  color: ${({ theme }) => theme.colors.white};
+  background: rgba(239, 239, 239, 0.2);
   border-radius: 12px;
-  padding: 24px;
+  padding: 2rem;
+  margin-bottom: 4rem;
 
   h2 {
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
   }
-  
-  p{
+
+  p {
     font-family: 'Poppins', sans-serif;
     color: rgba(255, 255, 255, 0.9);
     text-align: justify;
-    margin-top: 4px;
-    font-size: 15.8px;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    margin-block: 1rem 2rem;
   }
 `
 
 export const FirstContainer = styled(Container)`
-  grid-row: 1 / 3;
-  width: 328px;
+  margin-bottom: 3.94rem;
 
   img {
-    width: 271px;
-    height: 237px;
-    margin-top: -4.5rem;
+    margin-block: -4.5rem 2rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 0.75rem;
+  }
+
+  @media (min-width: 950px) {
+    grid-row: 1 / 3;
   }
 `
-export const SecondContainer = styled(Container)`
-  width: 364px;
-`
-export const ThirdContainer = styled(Container)`
-  width: 364px;
-`
+export const SecondContainer = styled(Container)``
+export const ThirdContainer = styled(Container)``
 export const FourthContainer = styled(Container)`
-  grid-column: 2 / 4;
-
-  p{
-    width: 476px;
+  button {
+    margin-bottom: 3rem;
   }
 
-  img {
-    width: 238px;
-    height: 216px;
+  .fourthImg {
+    margin: 0 0 0 3.5rem;
+  }
+
+  @media (min-width: 950px) {
+    grid-column: 2 / 4;
   }
 `
 
@@ -100,7 +106,7 @@ export const Button = styled.button`
   border: 2px solid ${({ theme }) => theme.colors.primary_medium};
   border-radius: 16px;
   margin-top: 1rem;
-  padding-inline: 24px;
+  padding-inline: 1.5rem;
 
   display: flex;
   align-items: center;

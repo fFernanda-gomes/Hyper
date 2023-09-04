@@ -7,19 +7,21 @@ export function Public() {
     <Body>
       <Header />
       <Main>
-        <Title>
-          <span>Público</span> Alvo
-        </Title>
-        <SubTitle>O Hyper foi feito especialmente para você</SubTitle>
+        <div className="content">
+          <Title>
+            <span>Público</span> Alvo
+          </Title>
+          <SubTitle>O Hyper foi feito especialmente para você</SubTitle>
 
-        <UlArea>
-          <List>
-            <ItemList>Lorem iosum dolor sit amet dolor</ItemList>
-            <ItemList>Lorem iosum dolor sit amet dolor</ItemList>
-            <ItemList>Lorem iosum dolor sit amet dolor</ItemList>
-            <ItemList>Lorem iosum dolor sit amet dolor</ItemList>
-          </List>
-        </UlArea>
+          <UlArea>
+            <List>
+              <ItemList>Lorem iosum dolor sit amet dolor</ItemList>
+              <ItemList>Lorem iosum dolor sit amet dolor</ItemList>
+              <ItemList>Lorem iosum dolor sit amet dolor</ItemList>
+              <ItemList>Lorem iosum dolor sit amet dolor</ItemList>
+            </List>
+          </UlArea>
+        </div>
 
         <img src={TargetPublic} alt="" />
       </Main>

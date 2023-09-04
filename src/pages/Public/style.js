@@ -5,10 +5,25 @@ import bgMobile from '../../assets/bgPublicMobile.svg'
 export const Body = styled.body`
   background: url(${bgMobile});
   background-size: cover;
+  height: 100vh;
 `
 
 export const Main = styled.body`
   padding: 0 3rem 4rem 3rem;
+
+  @media (min-width: 850px) {
+    margin: 0 6rem 4rem 6rem;
+    padding: 6rem 4rem;
+
+    border-radius: 2rem;
+    background: rgba(0, 0, 0, 0.8);
+
+    display: flex;
+
+    .content {
+      margin-right: 6.5rem;
+    }
+  }
 `
 
 export const Title = styled.h1`
@@ -20,6 +35,11 @@ export const Title = styled.h1`
 
   span {
     color: ${({ theme }) => theme.colors.primary_medium};
+  }
+
+  @media (min-width: 850px) {
+    font-size: 2.5rem;
+    font-weight: 700;
   }
 `
 
@@ -36,6 +56,10 @@ export const UlArea = styled.div`
   border-radius: 16px;
   padding: 1.3rem 0.88rem;
   margin-bottom: 3rem;
+
+  @media (min-width: 850px) {
+    padding: 1.5rem;
+  }
 `
 
 export const List = styled.ul`

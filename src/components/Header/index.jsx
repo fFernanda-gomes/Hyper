@@ -41,6 +41,15 @@ export function Header() {
               />
             )}
           </Button>
+
+          <div>
+            <nav>
+              <li>A</li>
+              <li>B</li>
+              <li>C</li>
+              <li>D</li>
+            </nav>
+          </div>
         </div>
 
         <NavLink to="/">

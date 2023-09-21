@@ -28,7 +28,7 @@ export function SignIn() {
             </LogoContainer>
 
             <Input type="text" placeholder="Nome" name="dsfas" />
-            <Input placeholder="Nome" />
+            <Input title="Nome" />
 
             {/* <LoginArea> */}
             {/* <img src={email} alt="" width={24} height={24} /> */}

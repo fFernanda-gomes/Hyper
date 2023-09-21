@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import bgHomeMobile from '../../assets/bgHomeMobile.svg'
 import bgHomeWeb from '../../assets/bgHomeWeb.svg'
 
-export const Body = styled.body`
+export const Body = styled.div`
   padding-bottom: 139px;
   background: url(${bgHomeMobile});
   background-size: cover;

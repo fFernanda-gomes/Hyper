@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Body = styled.body``
+export const Body = styled.div``
 
 export const Main = styled.main`
   padding: 0 3rem 5rem 3rem;
@@ -26,9 +26,11 @@ export const Main = styled.main`
 `
 
 export const Containers = styled.div`
+
   @media (min-width: 950px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
   }
 `
 
@@ -67,8 +69,6 @@ export const Container = styled.div`
 `
 
 export const FirstContainer = styled(Container)`
-  margin-bottom: 3.94rem;
-
   img {
     margin-block: -4.5rem 2rem;
   }
@@ -88,6 +88,7 @@ export const FirstContainer = styled(Container)`
 export const SecondContainer = styled(Container)``
 export const ThirdContainer = styled(Container)``
 export const FourthContainer = styled(Container)`
+
   button {
     margin-bottom: 3rem;
   }
@@ -98,6 +99,7 @@ export const FourthContainer = styled(Container)`
 
   @media (min-width: 950px) {
     grid-column: 2 / 4;
+    display: flex;
   }
 `
 

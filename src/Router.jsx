@@ -9,6 +9,7 @@ import { Download } from './pages/Download'
 import { Bibliography } from './pages/Bibliography'
 import { DefaultLayout } from './layout/Default'
 import { SignUp } from './pages/SignUp'
+import { ForgottenPassword } from './pages/ForgottenPassoword'
 
 export function Router() {
   return (
@@ -19,6 +20,7 @@ export function Router() {
       <Route path="/" element={<DefaultLayout />}>
         <Route path="/Login" element={<SignIn />} />
         <Route path="/Cadastro" element={<SignUp />} />
+        <Route path="/ForgottenPassword" element={<ForgottenPassword />} />
         <Route path="/Objetivos" element={<Objective />} />
         <Route path="/Equipamentos" element={<Hardware />} />
         <Route path="/Funcionamento" element={<Operation />} />

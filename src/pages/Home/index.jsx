@@ -4,11 +4,13 @@ import { GlobalStyle } from '../../styles/Global'
 import logoTitle from '../../assets/titleHyper.svg'
 import TitleWeb from '../../assets/LogoWeb.svg'
 import glasses from '../../assets/glasses.svg'
+import ButtonMore from '../../assets/ButtonMore.svg'
 
 import {
   BarraHorizontal,
   BarraVertical,
   Body,
+  Button,
   ContainerFlex,
   ContainerText,
   DiferencialContainer,
@@ -20,11 +22,19 @@ import {
   ParagrafoContainer,
   ThirdTitle,
 } from './styles'
+import { useState } from 'react'
+import { MenuMobile } from '../../components/Header/MenuMobile'
 
 export function Home() {
+  const [menuIsVisible, setMenuIsVisible] = useState(false)
+
   return (
     <Body>
-      <Header />
+      <MenuMobile
+        menuIsVisible={menuIsVisible}
+        setMenuIsVisible={setMenuIsVisible}
+      />
+      <Header setMenuIsVisible={setMenuIsVisible} />
       <Main>
         <LogoContainer>
           <img src={logoTitle} alt="" className="TitleMobile" />
@@ -42,12 +52,14 @@ export function Home() {
           </p>
         </IntroducaoContainer>
 
-        <button>More</button>
+        <Button>
+          <img src={ButtonMore} alt="" />
+        </Button>
 
         <DiferencialContainer>
           <div>
             <ThirdTitle>
-              <span>Diferenciais</span> do projeto
+              <span>Diferenciais</span> <br className="br" /> do projeto
             </ThirdTitle>
             <Paragrafo>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

@@ -36,6 +36,10 @@ export const LogoContainer = styled.div`
     display: none;
   }
 
+  .br {
+    display: none;
+  }
+
   @media (min-width: 850px) {
     .TitleWeb {
       display: flex;
@@ -52,6 +56,10 @@ export const LogoContainer = styled.div`
       letter-spacing: 1.5rem;
 
       margin-block: 0 5.5rem;
+    }
+
+    .br {
+      display: flex;
     }
   }
 `
@@ -81,6 +89,14 @@ export const IntroducaoContainer = styled.div`
       text-transform: capitalize;
     }
   }
+`
+
+export const Button = styled.button`
+  border: none;
+  background: none;
+  width: 11.5rem;
+  height: 5.5rem;
+  margin: auto;
 `
 
 export const BarraVertical = styled.div`

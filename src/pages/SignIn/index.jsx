@@ -1,4 +1,3 @@
-import { GlobalStyle } from '../../styles/Global'
 import { ButtonForm } from '../../components/ButtonForm'
 
 import Logo from '../../assets/logo.svg'
@@ -11,7 +10,8 @@ import {
   LogoContainer,
   MainContainer,
 } from './styles'
-import { InputForm } from '../../components/Input'
+import Input from '../../components/Input'
+
 import { NavLink } from 'react-router-dom'
 
 export function SignIn() {
@@ -27,8 +27,8 @@ export function SignIn() {
               <img src={Logo} alt="" />
             </LogoContainer>
 
-            <InputForm />
-            <InputForm />
+            <Input type="text" placeholder="Nome" name="dsfas" />
+            <Input placeholder="Nome" />
 
             {/* <LoginArea> */}
             {/* <img src={email} alt="" width={24} height={24} /> */}
@@ -46,7 +46,7 @@ export function SignIn() {
                 <label htmlFor="">Lembrar de mim</label>
               </div>
 
-              <a href="">Esqueceu a senha?</a>
+              <NavLink to="/ForgottenPassword">Esqueceu a senha?</NavLink>
             </Adds>
           </InputsContainer>
         </form>
@@ -54,7 +54,6 @@ export function SignIn() {
         <ButtonForm />
         <NavLink to="/Cadastro">Não possui uma conta?</NavLink>
       </MainContainer>
-      <GlobalStyle />
     </Body>
   )
 }

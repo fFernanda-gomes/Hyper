@@ -1,12 +1,12 @@
 import { LoginArea } from './style'
 
-function InputForm(type, PlaceHolder, src) {
+function Input({ type, title, src, name }) {
   return (
     <LoginArea>
       <img src={src} alt="" />
-      <input type={type} placeholder={PlaceHolder} />
+      <input type={type} placeholder={title} name={name} />
     </LoginArea>
   )
 }
 
-export { InputForm }
+export default Input

@@ -5,7 +5,6 @@ import bgMobile from '../../assets/bgPublicMobile.svg'
 export const Body = styled.body`
   background: url(${bgMobile});
   background-size: cover;
-  height: 100vh;
 `
 
 export const Main = styled.body`

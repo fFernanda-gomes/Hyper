@@ -1,39 +1,43 @@
 import { ButtonForm } from '../../components/ButtonForm'
 
-import door from '../../assets/door.svg'
+import door from '../../assets/E-mail-2.png'
 
 import {
   Adds,
-  Body,
   InputsContainer,
   LoginArea,
   LogoContainer,
   MainContainer,
+  SubTitle,
 } from './styles'
-import { InputForm } from '../../components/Input'
+import Input from '../../components/Input'
 
 export function SignUp() {
   return (
-    <>
+    <MainContainer>
       <h1>
         <img src={door} alt="" />
         Cadastre-se
       </h1>
-      <h2>Preencha os campos abaixo</h2>
+      <SubTitle>
+        <h2>Preencha os campos abaixo</h2>
+      </SubTitle>
 
       <form action="">
-        <InputForm />
-        <InputForm />
-        <InputForm />
-        <InputForm />
+        <InputsContainer>
+          <Input />
+          <Input />
+          <Input />
+          <Input />
+        </InputsContainer>
 
-        <div>
+        <Adds>
           <input type="checkbox" name="" id="checkbox" />
           <label htmlFor="">Concordo com os termos</label>
-        </div>
+        </Adds>
       </form>
 
       <ButtonForm />
-    </>
+    </MainContainer>
   )
 }

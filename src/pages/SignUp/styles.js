@@ -1,50 +1,21 @@
 import styled from 'styled-components'
 
-export const Body = styled.body`
-  height: 100vh;
-  /* @media (min-width: 950px) {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  } */
-`
-
 export const MainContainer = styled.main`
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   color: #fff;
-
-  img {
-    display: none;
-  }
 
   h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 36px;
     font-weight: 700;
-  }
-
-  p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-
-    margin-block: 7px 64px;
+    text-align: center;
   }
 
   Form {
     margin-bottom: 64px;
-  }
-
-  a {
-    margin-top: 16px;
-    color: rgba(255, 255, 255, 0.6);
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
   }
 
   @media (min-width: 950px) {
@@ -54,8 +25,7 @@ export const MainContainer = styled.main`
     padding-block: 47px 64px;
     margin-inline: auto;
 
-    h1,
-    p {
+    h1 {
       display: none;
     }
 
@@ -66,7 +36,25 @@ export const MainContainer = styled.main`
   }
 `
 
-export const InputsContainer = styled.div``
+export const SubTitle = styled.div`
+  max-width: 217px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: start;
+
+    margin-block: 1px 52px;
+  }
+`
+
+export const InputsContainer = styled.div`
+  margin: 0 auto;
+`
 
 export const LogoContainer = styled.div`
   display: flex;
@@ -103,7 +91,7 @@ export const Adds = styled.div`
   font-family: 'Poppins', sans-serif;
   padding-top: 16px;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
 
   div {
     display: flex;

@@ -4,10 +4,11 @@ export const HeaderContainer = styled.header`
   padding: 32px 48px 72px 48px;
   font-family: 'Montserrat', sans-serif;
 
-  .mobile {
+  .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: translate 0.3s;
 
     .list {
       display: block;
@@ -52,6 +53,18 @@ export const HeaderContainer = styled.header`
 export const Button = styled.button`
   background: transparent;
   border: none;
+`
+
+export const Menu = styled.div`
+  .options {
+    border: 1px solid slateblue;
+    width: 10rem;
+    transition: translate 0.3s;
+  }
+
+  .options.close {
+    translate: 0;
+  }
 `
 
 export const NavContainer = styled.nav`

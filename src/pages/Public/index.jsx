@@ -1,11 +1,19 @@
 import { Body, ItemList, List, Main, SubTitle, Title, UlArea } from './style'
 import TargetPublic from '../../assets/TargetPublic.png'
 import { Header } from '../../components/Header'
+import { MenuMobile } from '../../components/Header/MenuMobile'
+import { useState } from 'react'
 
 export function Public() {
+  const [menuIsVisible, setMenuIsVisible] = useState(false)
+
   return (
     <Body>
-      <Header />
+      <MenuMobile
+        menuIsVisible={menuIsVisible}
+        setMenuIsVisible={setMenuIsVisible}
+      />
+      <Header setMenuIsVisible={setMenuIsVisible} />
       <Main>
         <div className="content">
           <Title>

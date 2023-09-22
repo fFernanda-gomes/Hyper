@@ -86,7 +86,6 @@ export function Home() {
 
           <img src={glasses} alt="" />
         </DiferencialContainer>
-        <GlobalStyle />
       </Main>
     </Body>
   )

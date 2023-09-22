@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import bgHomeMobile from '../../assets/bgHomeMobile.svg'
 import bgHomeWeb from '../../assets/bgHomeWeb.svg'
 
-export const Body = styled.body`
+export const Body = styled.div`
   padding-bottom: 139px;
   background: url(${bgHomeMobile});
   background-size: cover;
@@ -15,9 +15,14 @@ export const Body = styled.body`
 
 export const Main = styled.main`
   margin: 0 48px 0 48px;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: 850px) {
+    margin: 0 6rem 4rem 6rem;
+  }
 `
 
 export const LogoContainer = styled.div`
@@ -117,12 +122,22 @@ export const DiferencialContainer = styled.div`
   color: ${({ theme }) => theme.colors.white};
 
   @media (min-width: 850px) {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 11.5rem;
     border-radius: 2rem;
     //opacity: 0.32;
-    background: rgba(0, 0, 0, 0.8);
+    fill-opacity: 0.2;
+    background: rgba(0, 0, 0, 0.5);
+
     padding: 6rem 7.88rem;
+
+    img {
+      width: 23.125rem;
+      height: 23.51188rem;
+    }
   }
 `
 
@@ -159,7 +174,7 @@ export const Paragrafo = styled.p`
   padding-block: 32.01px;
 
   @media (min-width: 850px) {
-    width: 31.625rem;
+    margin-right: 7.5rem;
     text-align: justify;
     font-size: 0.9rem;
     line-height: 1.375rem;
@@ -172,6 +187,10 @@ export const ParagrafoBarra = styled.p`
   font-family: 'Poppins', sans-serif; //mudar pro global theme
   font-weight: 400;
   font-size: 12px;
+
+  @media (min-width: 850px) {
+    font-size: 1rem;
+  }
 `
 
 export const BarraHorizontal = styled.div`
@@ -195,6 +214,9 @@ export const ParagrafoContainer = styled.p`
   @media (min-width: 850px) {
     line-height: 1.375rem;
     text-transform: capitalize;
+    font-size: 1rem;
+    text-align: justify;
+    font-weight: 400;
   }
 `
 

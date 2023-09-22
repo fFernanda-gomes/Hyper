@@ -5,7 +5,6 @@ import peca from '../../assets/peca.svg'
 import brain from '../../assets/brain.svg'
 
 import {
-  Body,
   Button,
   FirstContainer,
   SecondContainer,
@@ -14,11 +13,12 @@ import {
   Containers,
   Main,
   Title,
+  ContainerMain,
 } from './styles'
 
 export function Objective() {
   return (
-    <Body>
+    <ContainerMain>
       <Main>
         <Title>
           <span>Objetivos</span> <br />
@@ -64,21 +64,22 @@ export function Objective() {
 
           <FourthContainer>
             <div>
-            <h2>Title here and here</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
-            </p>
-            <Button>
-              <ArrowRight size={28} color="#ffffff" weight="light" />
-            </Button>
+              <h2>Title here and here</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod.
+              </p>
+              <Button>
+                <ArrowRight size={28} color="#ffffff" weight="light" />
+              </Button>
             </div>
             <img src={brain} alt="" className="fourthImg" />
           </FourthContainer>
         </Containers>
       </Main>
       <GlobalStyle />
-    </Body>
+    </ContainerMain>
   )
 }

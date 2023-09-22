@@ -2,12 +2,13 @@ import styled from 'styled-components'
 import bullet from '../../assets/bulletList.svg'
 import bgMobile from '../../assets/bgPublicMobile.svg'
 
-export const Body = styled.body`
+export const Body = styled.div`
   background: url(${bgMobile});
   background-size: cover;
+  height: 100vh;
 `
 
-export const Main = styled.body`
+export const Main = styled.main`
   padding: 0 3rem 4rem 3rem;
 
   @media (min-width: 850px) {

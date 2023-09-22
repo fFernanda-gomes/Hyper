@@ -9,6 +9,5 @@ export const Body = styled.div`
   @media (min-width: 850px) {
     background: url(${bgWeb});
     background-size: cover;
-    height: 100vh;
   }
 `

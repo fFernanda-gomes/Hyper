@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Body = styled.body`
+export const Body = styled.div`
   height: 100vh;
   /* @media (min-width: 950px) {
     height: 100vh;

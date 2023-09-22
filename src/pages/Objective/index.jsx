@@ -63,6 +63,7 @@ export function Objective() {
           </ThirdContainer>
 
           <FourthContainer>
+            <div>
             <h2>Title here and here</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -72,6 +73,7 @@ export function Objective() {
             <Button>
               <ArrowRight size={28} color="#ffffff" weight="light" />
             </Button>
+            </div>
             <img src={brain} alt="" className="fourthImg" />
           </FourthContainer>
         </Containers>

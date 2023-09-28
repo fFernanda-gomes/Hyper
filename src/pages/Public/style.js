@@ -1,27 +1,45 @@
 import styled from 'styled-components'
 import bullet from '../../assets/bulletList.svg'
 import bgMobile from '../../assets/bgPublicMobile.svg'
+import bgWeb from '../../assets/bgWebPublic.svg'
 
 export const Body = styled.div`
   background: url(${bgMobile});
   background-size: cover;
-  height: 100vh;
+
+  @media (min-width: 850px) {
+    background: url(${bgWeb});
+    background-size: cover;
+    height: 100vh;
+  }
 `
 
 export const Main = styled.main`
   padding: 0 3rem 4rem 3rem;
+  .imgWeb {
+    display: none;
+  }
 
   @media (min-width: 850px) {
     margin: 0 6rem 4rem 6rem;
-    padding: 6rem 4rem;
+    padding: 6rem 4rem 3rem 4rem;
 
     border-radius: 2rem;
     background: rgba(0, 0, 0, 0.8);
 
     display: flex;
+    justify-content: space-between;
 
     .content {
       margin-right: 6.5rem;
+    }
+
+    .imgMobile {
+      display: none;
+    }
+
+    .imgWeb {
+      display: flex;
     }
   }
 `
@@ -65,6 +83,19 @@ export const UlArea = styled.div`
 export const List = styled.ul`
   list-style: inside url(${bullet});
   text-align: center;
+
+  .mobile {
+    display: none;
+  }
+
+  @media (min-width: 850px) {
+    .mobile {
+      display: flex;
+    }
+    .web {
+      display: none;
+    }
+  }
 `
 
 export const ItemList = styled.li`

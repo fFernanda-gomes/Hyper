@@ -1,5 +1,6 @@
 import { Body, ItemList, List, Main, SubTitle, Title, UlArea } from './style'
 import TargetPublic from '../../assets/TargetPublic.png'
+import TargetPublicWeb from '../../assets/PublicWeb.svg'
 import { Header } from '../../components/Header'
 import { MenuMobile } from '../../components/Header/MenuMobile'
 import { useState } from 'react'
@@ -23,15 +24,37 @@ export function Public() {
 
           <UlArea>
             <List>
-              <ItemList>Lorem iosum dolor sit amet dolor</ItemList>
-              <ItemList>Lorem iosum dolor sit amet dolor</ItemList>
-              <ItemList>Lorem iosum dolor sit amet dolor</ItemList>
-              <ItemList>Lorem iosum dolor sit amet dolor</ItemList>
+              <ItemList className="web">
+                Lorem iosum dolor sit amet dolor
+              </ItemList>
+              <ItemList className="web">
+                Lorem iosum dolor sit amet dolor
+              </ItemList>
+              <ItemList className="web">
+                Lorem iosum dolor sit amet dolor
+              </ItemList>
+              <ItemList className="web">
+                Lorem iosum dolor sit amet dolor
+              </ItemList>
+
+              <ItemList className="mobile">
+                Lorem iosum dolor sit amet dolor but it solem
+              </ItemList>
+              <ItemList className="mobile">
+                Lorem iosum dolor sit amet dolor but it solem
+              </ItemList>
+              <ItemList className="mobile">
+                Lorem iosum dolor sit amet dolor but it solem
+              </ItemList>
+              <ItemList className="mobile">
+                Lorem iosum dolor sit amet dolor but it solem
+              </ItemList>
             </List>
           </UlArea>
         </div>
 
-        <img src={TargetPublic} alt="" />
+        <img src={TargetPublic} alt="" className="imgMobile" />
+        <img src={TargetPublicWeb} alt="" className="imgWeb" />
       </Main>
     </Body>
   )

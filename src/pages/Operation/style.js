@@ -2,6 +2,13 @@ import styled from 'styled-components'
 
 export const Main = styled.main`
   padding: 0 3rem 6.94rem 3rem;
+
+  @media (min-width: 850px) {
+    border-radius: 2rem;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 0 6rem 0 6rem;
+    padding: 4.8rem 6rem 6.06rem 4rem;
+  }
 `
 
 export const Title = styled.h1`
@@ -14,13 +21,58 @@ export const Title = styled.h1`
   span {
     color: ${({ theme }) => theme.colors.primary_medium};
   }
+
+  @media (min-width: 850px) {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+  }
 `
+
+export const Containers = styled.div`
+  @media (min-width: 850px) {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 3rem;
+  }
+`
+
+export const Container = styled.div``
+
+export const Mode1 = styled(Container)`
+  @media (min-width: 850px) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+`
+export const Mode2 = styled(Container)`
+  @media (min-width: 850px) {
+    grid-column: 3 / 3;
+    grid-row: 1 / 2;
+  }
+`
+
+export const Separador = styled.div`
+  @media (min-width: 850px) {
+    display: flex;
+    gap: 2rem;
+    grid-row: 2;
+    grid-column: 1 / 4;
+  }
+`
+
+export const Mode3 = styled(Container)``
+export const Mode4 = styled(Container)``
 
 export const H2 = styled.h2`
   font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
   color: ${({ theme }) => theme.colors.white};
   margin-bottom: 0.12rem;
+
+  @media (min-width: 850px) {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
 `
 
 export const Text = styled.p`
@@ -31,9 +83,25 @@ export const Text = styled.p`
   line-height: 1.375rem;
   color: ${({ theme }) => theme.colors.white};
   margin-bottom: 2rem;
+
+  @media (min-width: 850px) {
+    font-size: 1rem;
+    line-height: normal;
+    color: rgba(255, 255, 255, 0.9);
+  }
 `
 
 export const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
+
+  @media (min-width: 850px) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    img {
+      width: 31.625rem;
+      height: 19.9375rem;
+    }
+  }
 `

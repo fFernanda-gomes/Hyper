@@ -16,6 +16,8 @@ export function Router() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/Publico" element={<Public />} />
+      <Route path="/Download" element={<Download />} />
+      <Route path="/Bibliografia" element={<Bibliography />} />
 
       <Route path="/" element={<DefaultLayout />}>
         <Route path="/Login" element={<SignIn />} />
@@ -24,8 +26,6 @@ export function Router() {
         <Route path="/Objetivos" element={<Objective />} />
         <Route path="/Equipamentos" element={<Hardware />} />
         <Route path="/Funcionamento" element={<Operation />} />
-        <Route path="/Download" element={<Download />} />
-        <Route path="/Bibliografia" element={<Bibliography />} />
       </Route>
     </Routes>
   )

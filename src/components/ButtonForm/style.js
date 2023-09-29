@@ -10,4 +10,9 @@ export const ButtonComponent = styled.button`
   font-weight: 600;
   font-size: 20px;
   font-family: 'Poppins', sans-serif;
+
+  @media (min-width: 850px) {
+    width: 32rem;
+    height: 4rem;
+  }
 `

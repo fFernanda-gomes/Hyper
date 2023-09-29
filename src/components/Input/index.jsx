@@ -1,11 +1,11 @@
-import { LoginArea } from './style'
+import { Container, InputContainer } from './style'
 
-function Input({ type, title, src, name }) {
+function Input({ type, title, img, name }) {
   return (
-    <LoginArea>
-      <img src={src} alt="" />
-      <input type={type} placeholder={title} name={name} />
-    </LoginArea>
+    <Container>
+      {img}
+      <InputContainer type={type} placeholder={title} name={name} />
+    </Container>
   )
 }
 

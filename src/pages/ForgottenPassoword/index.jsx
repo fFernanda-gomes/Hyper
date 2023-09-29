@@ -1,21 +1,31 @@
-import { MainContainer } from '../SignUp/styles'
-import key from '../../assets/key.png'
 import Input from '../../components/Input'
 import { ButtonForm } from '../../components/ButtonForm'
+import { Envelope, Key } from '@phosphor-icons/react'
+import { Align, Form, Logo, MainContainer, TitleContainer } from './styles'
+import LogoWeb from '../../assets/Logo.svg'
 
 export function ForgottenPassword() {
   return (
-    <MainContainer>
-      <h1>
-        <img src={key} alt="" />
-        Redefina a sua senha
-      </h1>
+    <Align>
+      <MainContainer>
+        <TitleContainer>
+          <Key size={60} color="#ffffff" weight="fill" />
+          <h1>Redefina a sua senha</h1>
+        </TitleContainer>
+        <Logo>
+          <img src={LogoWeb} alt="" />
+          <p>
+            Um email será enviado para que você possa alterar sua senha e
+            acessar sau conta
+          </p>
+        </Logo>
 
-      <form action="">
-        <Input />
-      </form>
+        <Form action="">
+          <Input title="E-mail" img={<Envelope size={28} color="#ffffff" />} />
+        </Form>
 
-      <ButtonForm />
-    </MainContainer>
+        <ButtonForm name="Enviar" />
+      </MainContainer>
+    </Align>
   )
 }

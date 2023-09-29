@@ -4,40 +4,61 @@ import door from '../../assets/E-mail-2.png'
 
 import {
   Adds,
+  Align,
   InputsContainer,
-  LoginArea,
-  LogoContainer,
+  Logo,
   MainContainer,
   SubTitle,
+  Title,
 } from './styles'
 import Input from '../../components/Input'
+import { Envelope, LockKey, User } from '@phosphor-icons/react'
+import LogoWeb from '../../assets/Logo.svg'
 
 export function SignUp() {
   return (
-    <MainContainer>
-      <h1>
-        <img src={door} alt="" />
-        Cadastre-se
-      </h1>
-      <SubTitle>
-        <h2>Preencha os campos abaixo</h2>
-      </SubTitle>
+    <Align>
+      <MainContainer>
+        <Title>
+          <img src={door} alt="" />
+          <h1>Cadastre-se</h1>
+        </Title>
+        <SubTitle>
+          <h2>Preencha os campos abaixo</h2>
+        </SubTitle>
 
-      <form action="">
-        <InputsContainer>
-          <Input />
-          <Input />
-          <Input />
-          <Input />
-        </InputsContainer>
+        <Logo>
+          <img src={LogoWeb} alt="" />
+        </Logo>
 
-        <Adds>
-          <input type="checkbox" name="" id="checkbox" />
-          <label htmlFor="">Concordo com os termos</label>
-        </Adds>
-      </form>
+        <form action="">
+          <InputsContainer>
+            <Input
+              title="Nome Completo"
+              img={<User size={28} color="#ffffff" weight="fill" />}
+            />
+            <Input
+              title="E-mail"
+              img={<Envelope size={28} color="#ffffff" weight="fill" />}
+            />
+            <Input
+              title="Senha"
+              img={<LockKey size={28} color="#ffffff" weight="fill" />}
+            />
+            <Input
+              title="Confirmar senha"
+              img={<LockKey size={28} color="#ffffff" weight="fill" />}
+            />
+          </InputsContainer>
 
-      <ButtonForm />
-    </MainContainer>
+          <Adds>
+            <input type="checkbox" name="" id="checkbox" />
+            <label htmlFor="">Concordo com os termos</label>
+          </Adds>
+        </form>
+
+        <ButtonForm name="Criar Conta" />
+      </MainContainer>
+    </Align>
   )
 }

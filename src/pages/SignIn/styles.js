@@ -47,11 +47,12 @@ export const MainContainer = styled.main`
     font-size: 16px;
   }
 
-  @media (min-width: 950px) {
+  @media (min-width: 850px) {
     background: rgba(0, 0, 0, 0.8);
     border-radius: 32px;
-    width: 640px;
-    padding-block: 47px 64px;
+    width: 40rem;
+    height: 38.5rem;
+    padding: 2.92rem 4rem 4rem 4rem;
     margin-inline: auto;
 
     h1,
@@ -63,38 +64,31 @@ export const MainContainer = styled.main`
       display: flex;
       padding-bottom: 46px;
     }
+
+    form {
+      margin-bottom: 1.5rem;
+    }
   }
 `
 
 export const InputsContainer = styled.div``
+export const InputsContent = styled.div`
+  @media (min-width: 850px) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+`
 
 export const LogoContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-`
 
-export const LoginArea = styled.div`
-  width: 279px;
-  height: 48px;
-  border: 2px solid #858585;
-  background: #5f5f5f;
-
-  padding: 12px;
-  display: flex;
-  align-items: center;
-
-  input {
-    padding-left: 12px;
-    background: none;
-    border: none;
-    outline: none;
-
-    &::placeholder {
-      color: #ffffffb5;
-      font-size: 16px;
-      font-weight: 500;
-      font-family: 'Poppins', sans-serif;
+  @media (min-width: 850px) {
+    img {
+      width: 10rem;
+      height: 7rem;
     }
   }
 `
@@ -120,5 +114,19 @@ export const Adds = styled.div`
     margin: 0;
     font-size: 12px;
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media (min-width: 850px) {
+    div {
+      margin-top: 4.31rem;
+    }
+
+    label {
+      font-size: 1rem;
+    }
+
+    a {
+      font-size: 1rem;
+    }
   }
 `

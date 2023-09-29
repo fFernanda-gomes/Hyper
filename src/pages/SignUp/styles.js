@@ -1,7 +1,11 @@
 import styled from 'styled-components'
 
-export const MainContainer = styled.main`
+export const Align = styled.div`
   height: 100vh;
+`
+
+export const MainContainer = styled.main`
+  padding: 0 3rem 0 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,8 +18,8 @@ export const MainContainer = styled.main`
     text-align: center;
   }
 
-  Form {
-    margin-bottom: 64px;
+  form {
+    margin-bottom: 1.5rem;
   }
 
   @media (min-width: 950px) {
@@ -29,31 +33,60 @@ export const MainContainer = styled.main`
       display: none;
     }
 
-    img {
-      display: flex;
-      padding-bottom: 46px;
+    form {
+      margin-bottom: 1rem;
     }
   }
 `
 
-export const SubTitle = styled.div`
-  max-width: 217px;
+export const Title = styled.div`
   display: flex;
-  align-items: left;
-  justify-content: left;
+
+  @media (min-width: 850px) {
+    display: none;
+  }
+`
+
+export const SubTitle = styled.div`
+  max-width: 220px;
 
   h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 500;
-    text-align: start;
 
     margin-block: 1px 52px;
+    margin-left: 0.5rem;
+  }
+
+  @media (min-width: 850px) {
+    display: none;
+  }
+`
+
+export const Logo = styled.div`
+  display: none;
+
+  @media (min-width: 850px) {
+    display: flex;
+
+    img {
+      width: 4rem;
+      height: 4.5rem;
+      margin-bottom: 3.15rem;
+      margin-inline: auto;
+    }
   }
 `
 
 export const InputsContainer = styled.div`
   margin: 0 auto;
+
+  @media (min-width: 850px) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 `
 
 export const LogoContainer = styled.div`
@@ -89,7 +122,7 @@ export const LoginArea = styled.div`
 
 export const Adds = styled.div`
   font-family: 'Poppins', sans-serif;
-  padding-top: 16px;
+  padding-top: 1rem;
   display: flex;
   justify-content: end;
 
@@ -108,5 +141,11 @@ export const Adds = styled.div`
     margin: 0;
     font-size: 12px;
     color: rgba(255, 255, 255, 0.6);
+  }
+
+  @media (min-width: 850px) {
+    label {
+      font-size: 1rem;
+    }
   }
 `

@@ -6,13 +6,14 @@ import {
   Adds,
   Body,
   InputsContainer,
-  LoginArea,
+  InputsContent,
   LogoContainer,
   MainContainer,
 } from './styles'
 import Input from '../../components/Input'
 
 import { NavLink } from 'react-router-dom'
+import { Envelope, LockKey } from '@phosphor-icons/react'
 
 export function SignIn() {
   return (
@@ -27,18 +28,16 @@ export function SignIn() {
               <img src={Logo} alt="" />
             </LogoContainer>
 
-            <Input type="text" placeholder="Nome" name="dsfas" />
-            <Input title="Nome" />
-
-            {/* <LoginArea> */}
-            {/* <img src={email} alt="" width={24} height={24} /> */}
-            {/* <input type="text" placeholder="E-mail" /> */}
-            {/* </LoginArea> */}
-
-            {/* <LoginArea>
-              {/* <img src={passwordIcon} alt="" width={24} height={24} />
-              <input type="password" placeholder="Senha" />
-            </LoginArea> */}
+            <InputsContent>
+              <Input
+                title="E-mail"
+                img={<Envelope size={28} color="#ffffff" />}
+              />
+              <Input
+                title="Senha"
+                img={<LockKey size={28} color="#ffffff" />}
+              />
+            </InputsContent>
 
             <Adds>
               <div>
@@ -51,7 +50,7 @@ export function SignIn() {
           </InputsContainer>
         </form>
 
-        <ButtonForm />
+        <ButtonForm name="Entrar" />
         <NavLink to="/Cadastro">Não possui uma conta?</NavLink>
       </MainContainer>
     </Body>

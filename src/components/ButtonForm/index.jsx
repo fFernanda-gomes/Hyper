@@ -1,5 +1,5 @@
 import { ButtonComponent } from './style'
 
-export function ButtonForm() {
-  return <ButtonComponent>Entrar</ButtonComponent>
+export function ButtonForm({ name }) {
+  return <ButtonComponent>{name}</ButtonComponent>
 }

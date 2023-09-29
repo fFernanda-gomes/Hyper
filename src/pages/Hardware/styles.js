@@ -12,7 +12,6 @@ export const Align = styled.div`
   height: 100vh;
 `
 
-
 export const Main = styled.main`
   padding: 0 3rem 5.75rem 3rem;
 

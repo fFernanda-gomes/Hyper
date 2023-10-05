@@ -21,7 +21,11 @@ export function ForgottenPassword() {
         </Logo>
 
         <Form action="">
-          <Input title="E-mail" img={<Envelope size={28} color="#ffffff" />} />
+          <Input
+            title="E-mail"
+            imgMobile={<Envelope size={28} color="#ffffff" />}
+            imgWeb={<Envelope size={32} color="#686868" weight="fill" />}
+          />
         </Form>
 
         <ButtonForm name="Enviar" />

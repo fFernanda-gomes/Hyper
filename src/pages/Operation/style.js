@@ -67,7 +67,7 @@ export const H2 = styled.h2`
   font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
   color: ${({ theme }) => theme.colors.white};
-  margin-bottom: 0.12rem;
+  margin-bottom: 0.22rem;
 
   @media (min-width: 850px) {
     font-size: 2rem;
@@ -78,7 +78,7 @@ export const H2 = styled.h2`
 export const Text = styled.p`
   font-family: 'Poppins', sans-serif;
   text-align: justify;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 400;
   line-height: 1.375rem;
   color: ${({ theme }) => theme.colors.white};

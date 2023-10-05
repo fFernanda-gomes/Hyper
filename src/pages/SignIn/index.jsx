@@ -31,11 +31,13 @@ export function SignIn() {
             <InputsContent>
               <Input
                 title="E-mail"
-                img={<Envelope size={28} color="#ffffff" />}
+                imgMobile={<Envelope size={28} color="#ffffff" />}
+                imgWeb={<Envelope size={38} color="#686868" weight="fill" />}
               />
               <Input
                 title="Senha"
-                img={<LockKey size={28} color="#ffffff" />}
+                imgMobile={<LockKey size={28} color="#ffffff" />}
+                imgWeb={<LockKey size={35} color="#686868" weight="fill" />}
               />
             </InputsContent>
 

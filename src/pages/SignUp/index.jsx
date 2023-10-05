@@ -35,19 +35,23 @@ export function SignUp() {
           <InputsContainer>
             <Input
               title="Nome Completo"
-              img={<User size={28} color="#ffffff" weight="fill" />}
+              imgMobile={<User size={28} color="#ffffff" weight="fill" />}
+              imgWeb={<User size={32} color="#686868" weight="fill" />}
             />
             <Input
               title="E-mail"
-              img={<Envelope size={28} color="#ffffff" weight="fill" />}
+              imgMobile={<Envelope size={28} color="#ffffff" weight="fill" />}
+              imgWeb={<Envelope size={32} color="#686868" weight="fill" />}
             />
             <Input
               title="Senha"
-              img={<LockKey size={28} color="#ffffff" weight="fill" />}
+              imgMobile={<LockKey size={28} color="#ffffff" weight="fill" />}
+              imgWeb={<LockKey size={32} color="#686868" weight="fill" />}
             />
             <Input
               title="Confirmar senha"
-              img={<LockKey size={28} color="#ffffff" weight="fill" />}
+              imgMobile={<LockKey size={28} color="#ffffff" weight="fill" />}
+              imgWeb={<LockKey size={32} color="#686868" weight="fill" />}
             />
           </InputsContainer>
 

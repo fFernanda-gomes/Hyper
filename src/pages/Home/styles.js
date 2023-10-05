@@ -120,6 +120,7 @@ export const BarraVertical = styled.div`
 export const DiferencialContainer = styled.div`
   margin-top: 136px;
   color: ${({ theme }) => theme.colors.white};
+  max-width: 1440px;
 
   @media (min-width: 850px) {
     width: 100%;

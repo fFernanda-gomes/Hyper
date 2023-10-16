@@ -1,5 +1,4 @@
 import { Header } from '../../components/Header'
-import { GlobalStyle } from '../../styles/Global'
 
 import logoTitle from '../../assets/titleHyper.svg'
 import TitleWeb from '../../assets/LogoWeb.svg'
@@ -7,20 +6,18 @@ import glasses from '../../assets/glasses.svg'
 import ButtonMore from '../../assets/ButtonMore.svg'
 
 import {
-  BarraHorizontal,
   BarraVertical,
   Body,
   Button,
-  ContainerFlex,
-  ContainerText,
   DiferencialContainer,
   IntroducaoContainer,
+  ItemList,
+  List,
   LogoContainer,
   Main,
   Paragrafo,
-  ParagrafoBarra,
-  ParagrafoContainer,
   ThirdTitle,
+  UlArea,
 } from './styles'
 import { useState } from 'react'
 import { MenuMobile } from '../../components/Header/MenuMobile'
@@ -45,10 +42,9 @@ export function Home() {
         <IntroducaoContainer>
           <BarraVertical />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-            ipsum suspendisse ultrices gravida. Risus commodo accumsan lacus
-            vel.
+            Sua chave para um foco excepcional. Transforme sua rotina e liberte
+            seu potencial com o dispositivo que revoluciona a vida das pessoas
+            com TDAH.
           </p>
         </IntroducaoContainer>
 
@@ -62,26 +58,25 @@ export function Home() {
               <span>Diferenciais</span> <br className="br" /> do projeto
             </ThirdTitle>
             <Paragrafo>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-              accumsan lacus vel{' '}
+              O Hyper oferece uma experiência única com seus diferenciais
+              exclusivos, incluindo:
             </Paragrafo>
-
-            <ContainerFlex>
-              <BarraHorizontal />
-              <ParagrafoBarra>
-                Lorem ipsum dolor sit amet, consectetur
-              </ParagrafoBarra>
-            </ContainerFlex>
-
-            <ContainerText>
-              <ParagrafoContainer>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do{' '}
-                <span>V</span> tempor incididunt ut labore et dolore magna
-                aliqua.
-              </ParagrafoContainer>
-            </ContainerText>
+            <UlArea>
+              <List>
+                <ItemList>
+                  <strong>Modo Foco Personalizado</strong>
+                </ItemList>
+                <ItemList>
+                  <strong>Modo Pomodoro personalizado</strong>
+                </ItemList>
+                <ItemList>
+                  <strong>Etiquetagem de Tarefas com Cores</strong>
+                </ItemList>
+                <ItemList>
+                  <strong>Aplicativo Integrado</strong>
+                </ItemList>
+              </List>
+            </UlArea>
           </div>
 
           <img src={glasses} alt="" />

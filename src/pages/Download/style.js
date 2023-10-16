@@ -19,8 +19,9 @@ export const Main = styled.main`
   @media (min-width: 850px) {
     border-radius: 2rem;
     background: rgba(0, 0, 0, 0.8);
-    margin: 0 6rem 0 6rem;
     padding: 4.8rem 6rem 7.06rem 4rem;
+    max-width: 1348px;
+    margin-inline: auto;
 
     display: flex;
   }
@@ -58,12 +59,12 @@ export const Text = styled.p`
   color: ${({ theme }) => theme.colors.white};
   text-align: justify;
   font-family: 'Poppins', sans-serif;
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: 400;
   margin-bottom: 3rem;
 
   @media (min-width: 850px) {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 `
 
@@ -106,7 +107,7 @@ export const Button = styled.button`
   border-radius: 1.25rem;
   border: 1px solid ${({ theme }) => theme.colors.primary_medium};
   color: ${({ theme }) => theme.colors.white};
-  padding: 0.31rem 0.63rem;
+  padding: 0.41rem 0.73rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -114,7 +115,7 @@ export const Button = styled.button`
 
   span {
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     font-weight: 500;
     margin-left: 0.53rem;
   }

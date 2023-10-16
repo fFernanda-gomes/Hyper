@@ -38,11 +38,9 @@ export function Download() {
           </div>
 
           <Text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-            do eiusmod tempor incididunt ut labore..
+            O Aplicativo Hyper: Seu aliado de controle total, gerenciando todas
+            as funções do dispositivo, proporcionando uma experiência
+            personalizada e eficaz para melhorar o foco e a rotina.
           </Text>
 
           <ImgContainer>

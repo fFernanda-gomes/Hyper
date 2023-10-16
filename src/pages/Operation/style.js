@@ -1,13 +1,18 @@
 import styled from 'styled-components'
 
+export const Align = styled.div`
+  height: 125vh;
+`
+
 export const Main = styled.main`
   padding: 0 3rem 6.94rem 3rem;
 
   @media (min-width: 850px) {
     border-radius: 2rem;
     background: rgba(0, 0, 0, 0.8);
-    margin: 0 6rem 0 6rem;
-    padding: 4.8rem 6rem 6.06rem 4rem;
+    margin-inline: auto;
+    padding: 4.8rem 6rem 5.06rem 4rem;
+    max-width: 1368px;
   }
 `
 
@@ -54,7 +59,7 @@ export const Mode2 = styled(Container)`
 export const Separador = styled.div`
   @media (min-width: 850px) {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     grid-row: 2;
     grid-column: 1 / 4;
   }
@@ -70,7 +75,7 @@ export const H2 = styled.h2`
   margin-bottom: 0.22rem;
 
   @media (min-width: 850px) {
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-bottom: 1rem;
   }
 `
@@ -85,9 +90,10 @@ export const Text = styled.p`
   margin-bottom: 2rem;
 
   @media (min-width: 850px) {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: normal;
     color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1rem;
   }
 `
 

@@ -1,6 +1,24 @@
 import styled from 'styled-components'
-import Arduino from '../../assets/hardwares/arduino.svg'
-import Jumpers from '../../assets/hardwares/jumpers.svg'
+
+// Mobile
+import arduino from '../../assets/hardwares/Mobile/arduino.svg'
+import bateria from '../../assets/hardwares/Mobile/bateria.svg'
+import buzzer from '../../assets/hardwares/Mobile/buzzer.svg'
+import cabo from '../../assets/hardwares/Mobile/caboAdaptador.svg'
+import jumpers from '../../assets/hardwares/Mobile/jumpers.svg'
+import led from '../../assets/hardwares/Mobile/led.svg'
+import bt from '../../assets/hardwares/Mobile/moduloBt.svg'
+import protoboard from '../../assets/hardwares/Mobile/protoboard.svg'
+
+// Web
+import Arduino from '../../assets/hardwares/web/arduino.png'
+import Bateria9V from '../../assets/hardwares/web/bateria9V.png'
+import Buzzer from '../../assets/hardwares/web/Buzzer.png'
+import CaboAdaptador from '../../assets/hardwares/web/caboAdaptador.png'
+import Jumpers from '../../assets/hardwares/web/JumpersMF.png'
+import Led from '../../assets/hardwares/web/Led.png'
+import PlacaBluetooth from '../../assets/hardwares/web/PlacaBluetooth.png'
+import Protoboard from '../../assets/hardwares/web/Protoboard.png'
 
 export const DOTS = styled.div`
   @media (min-width: 850px) {
@@ -13,6 +31,7 @@ export const Align = styled.div`
 `
 
 export const Main = styled.main`
+  max-width: 1248px;
   padding: 0 3rem 5.75rem 3rem;
 
   .dots {
@@ -41,7 +60,8 @@ export const Main = styled.main`
   }
 
   @media (min-width: 850px) {
-    margin: 0 6rem 4rem 6rem;
+    margin-bottom: 4rem;
+    margin-inline: auto;
     border-radius: 2rem;
     background: rgba(0, 0, 0, 0.8);
     padding: 4.06rem 4rem 6.56rem 4rem;
@@ -76,27 +96,37 @@ export const VisibleWeb = styled.div`
   }
 `
 
-export const Navigation = styled.div``
+export const Navigation = styled.div`
+  &::-webkit-scrollbar {
+    height: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: ${({ theme }) => theme.colors.primary_medium};
+    border-radius: 5px;
+  }
+`
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
 
   @media (min-width: 850px) {
-    margin-left: 1rem;
     display: flex;
-    gap: 3rem;
   }
 `
 
 export const ProductContainer = styled.div`
-  background: url(${Arduino});
   width: 7.875rem;
   height: 12rem;
 
   @media (min-width: 850px) {
-    background: url(${Jumpers});
     width: 15.75rem;
     height: 24rem;
   }
@@ -153,4 +183,56 @@ export const Price = styled.strong`
   @media (min-width: 850px) {
     font-size: 0.8rem;
   }
+`
+
+// containers Mobile
+export const FirstContainerMobile = styled(ProductContainer)`
+  background: url(${cabo});
+`
+export const SecondContainerMobile = styled(ProductContainer)`
+  background: url(${jumpers});
+`
+export const ThirdContainerMobile = styled(ProductContainer)`
+  background: url(${bt});
+`
+export const FourthContainerMobile = styled(ProductContainer)`
+  background: url(${protoboard});
+`
+export const FifthContainerMobile = styled(ProductContainer)`
+  background: url(${arduino});
+`
+export const SixthContainerMobile = styled(ProductContainer)`
+  background: url(${bateria});
+`
+export const SeventhContainerMobile = styled(ProductContainer)`
+  background: url(${buzzer});
+`
+export const EighthContainerMobile = styled(ProductContainer)`
+  background: url(${led});
+`
+
+// containers Web
+export const FirstContainerWeb = styled(ProductContainer)`
+  background: url(${Jumpers});
+`
+export const SecondContainerWeb = styled(ProductContainer)`
+  background: url(${Led});
+`
+export const ThirdContainerWeb = styled(ProductContainer)`
+  background: url(${Protoboard});
+`
+export const FourthContainerWeb = styled(ProductContainer)`
+  background: url(${PlacaBluetooth});
+`
+export const FifthContainerWeb = styled(ProductContainer)`
+  background: url(${CaboAdaptador});
+`
+export const SixthContainerWeb = styled(ProductContainer)`
+  background: url(${Arduino});
+`
+export const SeventhContainerWeb = styled(ProductContainer)`
+  background: url(${Bateria9V});
+`
+export const EighthContainerWeb = styled(ProductContainer)`
+  background: url(${Buzzer});
 `

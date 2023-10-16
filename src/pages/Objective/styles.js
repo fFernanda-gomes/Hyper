@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const ContainerMain = styled.div`
   @media (min-width: 950px) {
-    height: 100vh;
+    height: 110vh;
   }
 `
 
@@ -88,7 +88,7 @@ export const FirstContainer = styled(Container)`
   }
 
   p {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
   }
 
   @media (min-width: 950px) {
@@ -125,7 +125,7 @@ export const FourthContainer = styled(Container)`
     display: flex;
 
     button {
-      margin-bottom: 0;
+      margin-block: 1.3rem 0;
     }
   }
 `
@@ -134,7 +134,7 @@ export const Button = styled.button`
   background: none;
   border: 2px solid ${({ theme }) => theme.colors.primary_medium};
   border-radius: 16px;
-  margin-top: 1rem;
+  margin-block: 1rem 0;
   padding-inline: 1.5rem;
 
   display: flex;

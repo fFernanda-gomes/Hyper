@@ -7,21 +7,24 @@ export const Body = styled.div`
   background: url(${bgMobile});
   background-size: cover;
 
-  @media (min-width: 850px) {
-    background: url(${bgWeb});
-    background-size: cover;
-    height: 100vh;
-  }
-`
-
-export const Main = styled.main`
-  padding: 0 3rem 4rem 3rem;
   .imgWeb {
     display: none;
   }
 
   @media (min-width: 850px) {
-    margin: 0 6rem 4rem 6rem;
+    background: url(${bgWeb});
+    background-size: cover;
+    height: 110vh;
+  }
+`
+
+export const Main = styled.main`
+  max-width: 1248px;
+  padding: 0 3rem 4rem 3rem;
+
+  @media (min-width: 850px) {
+    margin-bottom: 4rem;
+    margin-inline: auto;
     padding: 6rem 4rem 3rem 4rem;
 
     border-radius: 2rem;
@@ -72,7 +75,7 @@ export const SubTitle = styled.p`
 export const UlArea = styled.div`
   background: rgba(239, 239, 239, 0.2);
   border-radius: 16px;
-  padding: 1.3rem 0.88rem;
+  padding: 1.3rem 0.5rem 1.3rem 1rem;
   margin-bottom: 3rem;
 
   @media (min-width: 850px) {
@@ -81,27 +84,44 @@ export const UlArea = styled.div`
 `
 
 export const List = styled.ul`
-  list-style: inside url(${bullet});
-  text-align: center;
+  list-style: none;
+  text-align: start;
+  display: grid;
+  gap: 0.2rem;
 
-  .mobile {
-    display: none;
-  }
-
-  @media (min-width: 850px) {
-    .mobile {
-      display: flex;
-    }
-    .web {
-      display: none;
-    }
+  @media (min-width: 950px) {
+    gap: 0.4rem;
   }
 `
 
 export const ItemList = styled.li`
   color: rgba(239, 239, 239, 0.9);
   font-family: 'Poppins', sans-serif;
-  line-height: 2rem;
+  line-height: 1.7rem;
   font-size: 0.90625rem;
   font-weight: 400;
+
+  &::before {
+    content: '•';
+    color: #36a7db;
+    font-size: 1.3rem;
+    display: inline-block;
+    width: 0.6em;
+    margin-left: -0.2em;
+  }
+
+  @media (min-width: 950px) {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+
+    &::before {
+      content: '•';
+      color: #36a7db;
+      font-size: 2rem;
+      display: inline-block;
+      width: 0.6em;
+      margin-left: -0.2em;
+      margin-right: 0;
+    }
+  }
 `

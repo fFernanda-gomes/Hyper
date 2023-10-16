@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import bgHomeMobile from '../../assets/bgHomeMobile.svg'
 import bgHomeWeb from '../../assets/bgHomeWeb.svg'
+import bullet from '../../assets/bulletList.svg'
 
 export const Body = styled.div`
   padding-bottom: 139px;
@@ -88,9 +89,9 @@ export const IntroducaoContainer = styled.div`
       width: 34.9375rem;
       height: 5.25rem;
       text-align: justify;
-      font-size: 1rem;
+      font-size: 1.15rem;
       font-weight: 400;
-      line-height: 1.375rem;
+      line-height: 1.635rem;
       text-transform: capitalize;
     }
   }
@@ -120,7 +121,7 @@ export const BarraVertical = styled.div`
 export const DiferencialContainer = styled.div`
   margin-top: 136px;
   color: ${({ theme }) => theme.colors.white};
-  max-width: 1440px;
+  max-width: 1340px;
 
   @media (min-width: 850px) {
     width: 100%;
@@ -133,11 +134,12 @@ export const DiferencialContainer = styled.div`
     fill-opacity: 0.2;
     background: rgba(0, 0, 0, 0.5);
 
-    padding: 6rem 7.88rem;
+    padding: 5rem 6.88rem;
 
     img {
       width: 23.125rem;
       height: 23.51188rem;
+      margin-top: 5rem;
     }
   }
 `
@@ -171,71 +173,51 @@ export const ContainerFlex = styled.div`
 export const Paragrafo = styled.p`
   font-family: 'Poppins', sans-serif; //mudar pro global theme
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1rem;
   padding-block: 32.01px;
 
   @media (min-width: 850px) {
     margin-right: 7.5rem;
     text-align: justify;
-    font-size: 0.9rem;
-    line-height: 1.375rem;
+    font-size: 1.2rem;
+    line-height: 1.875rem;
     text-transform: capitalize;
-    margin-bottom: 0.63rem;
+    max-width: 600px;
   }
 `
 
-export const ParagrafoBarra = styled.p`
-  font-family: 'Poppins', sans-serif; //mudar pro global theme
-  font-weight: 400;
-  font-size: 12px;
-
-  @media (min-width: 850px) {
-    font-size: 1rem;
-  }
-`
-
-export const BarraHorizontal = styled.div`
-  width: 24px;
-  height: 2px;
-  background: ${({ theme }) => theme.colors.primary_medium};
-  margin-right: 10px;
-
-  @media (min-width: 850px) {
-    width: 3.25rem;
-    height: 0.125rem;
-    margin-right: 2.88rem;
-  }
-`
-
-export const ParagrafoContainer = styled.p`
-  font-family: 'Poppins', sans-serif; //mudar pro global theme
-  font-weight: 400;
-  font-size: 12px;
-
-  @media (min-width: 850px) {
-    line-height: 1.375rem;
-    text-transform: capitalize;
-    font-size: 1rem;
-    text-align: justify;
-    font-weight: 400;
-  }
-`
-
-export const ContainerText = styled.div`
-  background: rgba(31, 31, 31, 0.8);
-  width: 279px;
+export const UlArea = styled.div`
   border-radius: 16px;
-  padding: 16px;
-  margin-block: 32.01px;
+  margin-bottom: 2rem;
+  padding-left: 0.8rem;
 
-  span {
-    color: ${({ theme }) => theme.colors.primary_medium};
-    font-weight: 700;
+  @media (min-width: 850px) {
+    padding-left: 1.5rem;
+    max-width: 35.5rem;
+  }
+`
+
+export const List = styled.ul`
+  list-style: none;
+`
+
+export const ItemList = styled.li`
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  line-height: 2.3rem;
+  font-size: 15px;
+  font-weight: 400;
+
+  &::before {
+    content: '•';
+    color: #36a7db;
+    font-size: 1.3rem;
+    display: inline-block;
+    width: 0.6em;
+    margin-left: -0.2em;
   }
 
   @media (min-width: 850px) {
-    width: 31.625rem;
-    height: 6.125rem;
-    margin-block: 1.88rem 0;
+    font-size: 1.2rem;
   }
 `

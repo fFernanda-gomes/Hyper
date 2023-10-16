@@ -2,13 +2,28 @@ import {
   Align,
   Container,
   DOTS,
+  EighthContainerMobile,
+  EighthContainerWeb,
+  FifthContainerMobile,
+  FifthContainerWeb,
+  FirstContainerMobile,
+  FirstContainerWeb,
+  FourthContainerMobile,
+  FourthContainerWeb,
   Info,
   Main,
   NameProcuct,
   Navigation,
   Price,
   PriceContainer,
-  ProductContainer,
+  SecondContainerMobile,
+  SecondContainerWeb,
+  SeventhContainerMobile,
+  SeventhContainerWeb,
+  SixthContainerMobile,
+  SixthContainerWeb,
+  ThirdContainerMobile,
+  ThirdContainerWeb,
   Title,
   Visible,
   VisibleWeb,
@@ -31,9 +46,17 @@ export function Hardware() {
     created() {
       setLoaded(true)
     },
+    slides: {
+      spacing: 38,
+    },
   })
 
-  const [sliderRefWeb] = useKeenSlider()
+  const [sliderRefWeb] = useKeenSlider({
+    slides: {
+      perView: 4,
+      spacing: 44,
+    },
+  })
 
   return (
     <Align>
@@ -45,102 +68,88 @@ export function Hardware() {
         <Visible>
           <Navigation ref={sliderRef} className="keen-slider">
             <Container className="keen-slider__slide number-slide1">
-              <ProductContainer>
+              <FirstContainerMobile>
                 <Info>
                   <NameProcuct>
                     CABO ADAPTADOR <br /> BATERIA 9V
                   </NameProcuct>
                   <PriceContainer>
                     <img src={Cifrao} width={9} height={9} alt="" />
-                    <Price>R$ 00</Price>
+                    <Price>R$ 3,90</Price>
                   </PriceContainer>
                 </Info>
-              </ProductContainer>
+              </FirstContainerMobile>
 
-              <ProductContainer>
+              <SecondContainerMobile>
                 <Info>
-                  <NameProcuct>
-                    CABO ADAPTADOR <br /> BATERIA 9V
-                  </NameProcuct>
+                  <NameProcuct>JUMPERS</NameProcuct>
                   <PriceContainer>
                     <img src={Cifrao} width={9} height={9} alt="" />
-                    <Price>R$ 00</Price>
+                    <Price>R$ 27,60</Price>
                   </PriceContainer>
                 </Info>
-              </ProductContainer>
+              </SecondContainerMobile>
 
-              <ProductContainer>
+              <ThirdContainerMobile>
                 <Info>
-                  <NameProcuct>
-                    CABO ADAPTADOR <br /> BATERIA 9V
-                  </NameProcuct>
+                  <NameProcuct>MÓDULO HC-05</NameProcuct>
                   <PriceContainer>
                     <img src={Cifrao} width={9} height={9} alt="" />
-                    <Price>R$ 00</Price>
+                    <Price>R$ 49,90</Price>
                   </PriceContainer>
                 </Info>
-              </ProductContainer>
+              </ThirdContainerMobile>
 
-              <ProductContainer>
+              <FourthContainerMobile>
                 <Info>
-                  <NameProcuct>
-                    CABO ADAPTADOR <br /> BATERIA 9V
-                  </NameProcuct>
+                  <NameProcuct>PROTOBOARD</NameProcuct>
                   <PriceContainer>
                     <img src={Cifrao} width={9} height={9} alt="" />
-                    <Price>R$ 00</Price>
+                    <Price>R$ 12,90</Price>
                   </PriceContainer>
                 </Info>
-              </ProductContainer>
+              </FourthContainerMobile>
             </Container>
             <Container className="keen-slider__slide number-slide2">
-              <ProductContainer>
+              <FifthContainerMobile>
                 <Info>
-                  <NameProcuct>
-                    CABO ADAPTADOR <br /> BATERIA 9V
-                  </NameProcuct>
+                  <NameProcuct>ARDUINO UNO</NameProcuct>
                   <PriceContainer>
                     <img src={Cifrao} width={9} height={9} alt="" />
-                    <Price>R$ 00</Price>
+                    <Price>R$ 99,90</Price>
                   </PriceContainer>
                 </Info>
-              </ProductContainer>
+              </FifthContainerMobile>
 
-              <ProductContainer>
+              <SixthContainerMobile>
                 <Info>
-                  <NameProcuct>
-                    CABO ADAPTADOR <br /> BATERIA 9V
-                  </NameProcuct>
+                  <NameProcuct>BATERIA 9V</NameProcuct>
                   <PriceContainer>
                     <img src={Cifrao} width={9} height={9} alt="" />
-                    <Price>R$ 00</Price>
+                    <Price>R$ 24,44</Price>
                   </PriceContainer>
                 </Info>
-              </ProductContainer>
+              </SixthContainerMobile>
 
-              <ProductContainer>
+              <SeventhContainerMobile>
                 <Info>
-                  <NameProcuct>
-                    CABO ADAPTADOR <br /> BATERIA 9V
-                  </NameProcuct>
+                  <NameProcuct>BUZZER</NameProcuct>
                   <PriceContainer>
                     <img src={Cifrao} width={9} height={9} alt="" />
-                    <Price>R$ 00</Price>
+                    <Price>R$ 5,90</Price>
                   </PriceContainer>
                 </Info>
-              </ProductContainer>
+              </SeventhContainerMobile>
 
-              <ProductContainer>
+              <EighthContainerMobile>
                 <Info>
-                  <NameProcuct>
-                    CABO ADAPTADOR <br /> BATERIA 9V
-                  </NameProcuct>
+                  <NameProcuct>LED RGB</NameProcuct>
                   <PriceContainer>
                     <img src={Cifrao} width={9} height={9} alt="" />
-                    <Price>R$ 00</Price>
+                    <Price>R$ 2,40</Price>
                   </PriceContainer>
                 </Info>
-              </ProductContainer>
+              </EighthContainerMobile>
             </Container>
           </Navigation>
         </Visible>
@@ -168,104 +177,93 @@ export function Hardware() {
         </DOTS>
 
         <VisibleWeb>
-          <Navigation ref={sliderRefWeb} className="keen-slider">
-            <Container className="keen-slider__slide number-slide1">
-              <ProductContainer>
+          <Navigation
+            ref={sliderRefWeb}
+            className="keen-slider"
+            data-keen-slider-scrollable
+            style={{ overflowX: 'scroll' }}
+          >
+            <Container style={{ marginBottom: 40 }}>
+              <FirstContainerWeb className="keen-slider__slide number-slide1">
                 <Info>
-                  <NameProcuct>
-                    CABO ADAPTADOR <br /> BATERIA 9V
-                  </NameProcuct>
+                  <NameProcuct>JUMPERS</NameProcuct>
                   <PriceContainer>
                     <img src={Cifrao} width={9} height={9} alt="" />
-                    <Price>R$ 00</Price>
+                    <Price>R$ 27,60</Price>
                   </PriceContainer>
                 </Info>
-              </ProductContainer>
+              </FirstContainerWeb>
 
-              <ProductContainer>
+              <SecondContainerWeb className="keen-slider__slide number-slide2">
                 <Info>
-                  <NameProcuct>
-                    CABO ADAPTADOR <br /> BATERIA 9V
-                  </NameProcuct>
+                  <NameProcuct>LED RGB</NameProcuct>
                   <PriceContainer>
                     <img src={Cifrao} width={9} height={9} alt="" />
-                    <Price>R$ 00</Price>
+                    <Price>R$ 2,40</Price>
                   </PriceContainer>
                 </Info>
-              </ProductContainer>
+              </SecondContainerWeb>
 
-              <ProductContainer>
+              <ThirdContainerWeb className="keen-slider__slide number-slide3">
                 <Info>
-                  <NameProcuct>
-                    CABO ADAPTADOR <br /> BATERIA 9V
-                  </NameProcuct>
+                  <NameProcuct>PROTOBOARD</NameProcuct>
                   <PriceContainer>
                     <img src={Cifrao} width={9} height={9} alt="" />
-                    <Price>R$ 00</Price>
+                    <Price>R$ 12,90</Price>
                   </PriceContainer>
                 </Info>
-              </ProductContainer>
+              </ThirdContainerWeb>
 
-              <ProductContainer>
+              <FourthContainerWeb className="keen-slider__slide number-slide4">
+                <Info>
+                  <NameProcuct>MÓDULO HC-05</NameProcuct>
+                  <PriceContainer>
+                    <img src={Cifrao} width={9} height={9} alt="" />
+                    <Price>R$ 49,90</Price>
+                  </PriceContainer>
+                </Info>
+              </FourthContainerWeb>
+              <FifthContainerWeb className="keen-slider__slide number-slide5">
                 <Info>
                   <NameProcuct>
                     CABO ADAPTADOR <br /> BATERIA 9V
                   </NameProcuct>
                   <PriceContainer>
                     <img src={Cifrao} width={9} height={9} alt="" />
-                    <Price>R$ 00</Price>
+                    <Price>R$ 3,90</Price>
                   </PriceContainer>
                 </Info>
-              </ProductContainer>
-            </Container>
-            <Container className="keen-slider__slide number-slide2">
-              <ProductContainer>
-                <Info>
-                  <NameProcuct>
-                    CABO ADAPTADOR <br /> BATERIA 9V
-                  </NameProcuct>
-                  <PriceContainer>
-                    <img src={Cifrao} width={9} height={9} alt="" />
-                    <Price>R$ 00</Price>
-                  </PriceContainer>
-                </Info>
-              </ProductContainer>
+              </FifthContainerWeb>
 
-              <ProductContainer>
+              <SixthContainerWeb className="keen-slider__slide number-slide6">
                 <Info>
-                  <NameProcuct>
-                    CABO ADAPTADOR <br /> BATERIA 9V
-                  </NameProcuct>
+                  <NameProcuct>ARDUÍNO UNO</NameProcuct>
                   <PriceContainer>
                     <img src={Cifrao} width={9} height={9} alt="" />
-                    <Price>R$ 00</Price>
+                    <Price>R$ 99,90</Price>
                   </PriceContainer>
                 </Info>
-              </ProductContainer>
+              </SixthContainerWeb>
 
-              <ProductContainer>
+              <SeventhContainerWeb className="keen-slider__slide number-slide7">
                 <Info>
-                  <NameProcuct>
-                    CABO ADAPTADOR <br /> BATERIA 9V
-                  </NameProcuct>
+                  <NameProcuct>BATERIA 9V</NameProcuct>
                   <PriceContainer>
                     <img src={Cifrao} width={9} height={9} alt="" />
-                    <Price>R$ 00</Price>
+                    <Price>R$ 24,44</Price>
                   </PriceContainer>
                 </Info>
-              </ProductContainer>
+              </SeventhContainerWeb>
 
-              <ProductContainer>
+              <EighthContainerWeb className="keen-slider__slide number-slide8">
                 <Info>
-                  <NameProcuct>
-                    CABO ADAPTADOR <br /> BATERIA 9V
-                  </NameProcuct>
+                  <NameProcuct>BUZZER</NameProcuct>
                   <PriceContainer>
                     <img src={Cifrao} width={9} height={9} alt="" />
-                    <Price>R$ 00</Price>
+                    <Price>R$ 5,80</Price>
                   </PriceContainer>
                 </Info>
-              </ProductContainer>
+              </EighthContainerWeb>
             </Container>
           </Navigation>
         </VisibleWeb>

@@ -28,12 +28,12 @@ export function Objective() {
         <Containers>
           <FirstContainer>
             <img src={peca} alt="" className="firstImg" />
-            <h2 className="firstTitle">Title here and here</h2>
+            <h2 className="firstTitle">Melhorar a Qualidade de Vida</h2>
             <p className="firstP">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. amet,
-              consectetur adipiscing elit.
+              Capacitar pessoas com TDAH a gerenciar sua rotina de forma mais
+              eficaz, reduzindo o estresse e aumentando a qualidade de vida.
+              Isso possibilita que os indivíduos se dediquem mais às suas
+              atividades, obtendo resultados mais satisfatórios.
             </p>
             <Button>
               <ArrowRight size={28} color="#ffffff" weight="light" />
@@ -41,10 +41,10 @@ export function Objective() {
           </FirstContainer>
 
           <SecondContainer>
-            <h2>Title here and here</h2>
+            <h2>Aumentar a Produtividade</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Potencializar o foco e a concentração, permitindo que os usuários
+              realizem suas tarefas com maior eficiência.
             </p>
             <Button>
               <ArrowRight size={28} color="#ffffff" weight="light" />
@@ -52,10 +52,10 @@ export function Objective() {
           </SecondContainer>
 
           <ThirdContainer>
-            <h2>Title here and here</h2>
+            <h2>Promover uma Autonomia</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Capacitar os usuários a gerenciar seu TDAH de forma independente,
+              proporcionando maior controle sobre sua própria vida.
             </p>
             <Button>
               <ArrowRight size={28} color="#ffffff" weight="light" />
@@ -64,12 +64,11 @@ export function Objective() {
 
           <FourthContainer>
             <div>
-              <h2>Title here and here</h2>
+              <h2>Promover o Bem-Estar Mental</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod.
+                Contribuir para a redução da ansiedade e do cansaço mental,
+                criando um ambiente propício para um maior equilíbrio emocional
+                e mental.
               </p>
               <Button>
                 <ArrowRight size={28} color="#ffffff" weight="light" />

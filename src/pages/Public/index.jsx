@@ -24,31 +24,13 @@ export function Public() {
 
           <UlArea>
             <List>
-              <ItemList className="web">
-                Lorem iosum dolor sit amet dolor
+              <ItemList>
+                Pessoas com TDAH (Transtorno do Déficit de Atenção e
+                Hiperatividade)
               </ItemList>
-              <ItemList className="web">
-                Lorem iosum dolor sit amet dolor
-              </ItemList>
-              <ItemList className="web">
-                Lorem iosum dolor sit amet dolor
-              </ItemList>
-              <ItemList className="web">
-                Lorem iosum dolor sit amet dolor
-              </ItemList>
-
-              <ItemList className="mobile">
-                Lorem iosum dolor sit amet dolor but it solem
-              </ItemList>
-              <ItemList className="mobile">
-                Lorem iosum dolor sit amet dolor but it solem
-              </ItemList>
-              <ItemList className="mobile">
-                Lorem iosum dolor sit amet dolor but it solem
-              </ItemList>
-              <ItemList className="mobile">
-                Lorem iosum dolor sit amet dolor but it solem
-              </ItemList>
+              <ItemList>Estudantes e Profissionais</ItemList>
+              <ItemList>Pessoas que valorizam a organização</ItemList>
+              <ItemList>Cuidadores e Familiares</ItemList>
             </List>
           </UlArea>
         </div>

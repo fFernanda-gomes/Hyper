@@ -13,7 +13,7 @@ import {
 } from './styles'
 import Input from '../../components/Input'
 import { Envelope, LockKey, User } from '@phosphor-icons/react'
-import LogoWeb from '../../assets/Logo.svg'
+import LogoWeb from '../../assets/logo.svg'
 
 export function SignUp() {
   return (

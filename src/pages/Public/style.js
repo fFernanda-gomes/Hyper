@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import bullet from '../../assets/bulletList.svg'
 import bgMobile from '../../assets/bgPublicMobile.svg'
 import bgWeb from '../../assets/bgWebPublic.svg'
 

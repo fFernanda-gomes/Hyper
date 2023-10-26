@@ -2,7 +2,7 @@ import Input from '../../components/Input'
 import { ButtonForm } from '../../components/ButtonForm'
 import { Envelope, Key } from '@phosphor-icons/react'
 import { Align, Form, Logo, MainContainer, TitleContainer } from './styles'
-import LogoWeb from '../../assets/Logo.svg'
+import LogoWeb from '../../assets/logo.svg'
 
 export function ForgottenPassword() {
   return (

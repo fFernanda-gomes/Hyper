@@ -11,14 +11,14 @@ import bt from '../../assets/hardwares/Mobile/moduloBt.svg'
 import protoboard from '../../assets/hardwares/Mobile/protoboard.svg'
 
 // Web
-import Arduino from '../../assets/hardwares/web/arduino.png'
-import Bateria9V from '../../assets/hardwares/web/bateria9V.png'
-import Buzzer from '../../assets/hardwares/web/Buzzer.png'
-import CaboAdaptador from '../../assets/hardwares/web/caboAdaptador.png'
-import Jumpers from '../../assets/hardwares/web/JumpersMF.png'
-import Led from '../../assets/hardwares/web/Led.png'
-import PlacaBluetooth from '../../assets/hardwares/web/PlacaBluetooth.png'
-import Protoboard from '../../assets/hardwares/web/Protoboard.png'
+import Arduino from '../../assets/hardwares/Web/arduino.png'
+import Bateria9V from '../../assets/hardwares/Web/bateria9V.png'
+import Buzzer from '../../assets/hardwares/Web/Buzzer.png'
+import CaboAdaptador from '../../assets/hardwares/Web/caboAdaptador.png'
+import Jumpers from '../../assets/hardwares/Web/JumpersMF.png'
+import Led from '../../assets/hardwares/Web/Led.png'
+import PlacaBluetooth from '../../assets/hardwares/Web/PlacaBluetooth.png'
+import Protoboard from '../../assets/hardwares/Web/Protoboard.png'
 
 export const DOTS = styled.div`
   @media (min-width: 850px) {

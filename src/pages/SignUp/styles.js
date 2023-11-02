@@ -2,6 +2,10 @@ import styled from 'styled-components'
 
 export const Align = styled.div`
   height: 100vh;
+
+  @media (min-width: 950px) {
+    height: 135vh;
+  }
 `
 
 export const MainContainer = styled.main`
@@ -10,6 +14,20 @@ export const MainContainer = styled.main`
   flex-direction: column;
   align-items: center;
   color: #fff;
+
+  opacity: 0;
+  animation: appear 1.5s forwards;
+
+  @keyframes appear {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 
   h1 {
     font-family: 'Montserrat', sans-serif;
@@ -147,5 +165,25 @@ export const Adds = styled.div`
     label {
       font-size: 1rem;
     }
+  }
+`
+
+export const Button = styled.button`
+  width: 279px;
+  height: 48px;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(to right, #36a7db, #5fcee9);
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+
+  cursor: pointer;
+  outline: none;
+
+  @media (min-width: 850px) {
+    width: 32rem;
+    height: 4rem;
   }
 `

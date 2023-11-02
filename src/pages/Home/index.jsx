@@ -48,11 +48,11 @@ export function Home() {
           </p>
         </IntroducaoContainer>
 
-        <Button>
+        <Button href="#diferencial">
           <img src={ButtonMore} alt="" />
         </Button>
 
-        <DiferencialContainer>
+        <DiferencialContainer id="diferencial">
           <div>
             <ThirdTitle>
               <span>Diferenciais</span> <br className="br" /> do projeto

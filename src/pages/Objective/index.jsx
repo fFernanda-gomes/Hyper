@@ -16,9 +16,21 @@ import {
   ContainerMain,
 } from './styles'
 
+import { MenuMobile } from '../../components/Header/MenuMobile'
+import { Header } from '../../components/Header'
+import { useState } from 'react'
+
 export function Objective() {
+  const [menuIsVisible, setMenuIsVisible] = useState(false)
+
   return (
     <ContainerMain>
+      <MenuMobile
+        menuIsVisible={menuIsVisible}
+        setMenuIsVisible={setMenuIsVisible}
+      />
+      <Header setMenuIsVisible={setMenuIsVisible} />
+
       <Main>
         <Title>
           <span>Objetivos</span> <br />

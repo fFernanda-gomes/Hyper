@@ -5,6 +5,7 @@ import door from '../../assets/E-mail-2.png'
 import {
   Adds,
   Align,
+  Button,
   InputsContainer,
   Logo,
   MainContainer,
@@ -14,10 +15,22 @@ import {
 import Input from '../../components/Input'
 import { Envelope, LockKey, User } from '@phosphor-icons/react'
 import LogoWeb from '../../assets/logo.svg'
+import { MenuMobile } from '../../components/Header/MenuMobile'
+import { Header } from '../../components/Header'
+import { useState } from 'react'
+import { PopUp } from '../../components/PopUp'
 
 export function SignUp() {
+  const [menuIsVisible, setMenuIsVisible] = useState(false)
+
   return (
     <Align>
+      <MenuMobile
+        menuIsVisible={menuIsVisible}
+        setMenuIsVisible={setMenuIsVisible}
+      />
+      <Header setMenuIsVisible={setMenuIsVisible} />
+
       <MainContainer>
         <Title>
           <img src={door} alt="" />
@@ -35,6 +48,7 @@ export function SignUp() {
           <InputsContainer>
             <Input
               title="Nome Completo"
+              value={name}
               imgMobile={<User size={28} color="#ffffff" weight="fill" />}
               imgWeb={<User size={32} color="#686868" weight="fill" />}
             />
@@ -45,11 +59,13 @@ export function SignUp() {
             />
             <Input
               title="Senha"
+              type="password"
               imgMobile={<LockKey size={28} color="#ffffff" weight="fill" />}
               imgWeb={<LockKey size={32} color="#686868" weight="fill" />}
             />
             <Input
               title="Confirmar senha"
+              type="password"
               imgMobile={<LockKey size={28} color="#ffffff" weight="fill" />}
               imgWeb={<LockKey size={32} color="#686868" weight="fill" />}
             />
@@ -61,7 +77,11 @@ export function SignUp() {
           </Adds>
         </form>
 
-        <ButtonForm name="Criar Conta" />
+        <PopUp
+          name="Criar Conta"
+          title="Bem-vindo!💙"
+          message="Sua conta foi criada com sucesso!"
+        />
       </MainContainer>
     </Align>
   )

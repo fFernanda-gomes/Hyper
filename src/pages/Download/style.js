@@ -16,6 +16,20 @@ export const Body = styled.div`
 export const Main = styled.main`
   padding: 0 3rem 6.25rem 3rem;
 
+  opacity: 0;
+  animation: download 1.5s forwards;
+
+  @keyframes download {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
   @media (min-width: 850px) {
     border-radius: 2rem;
     background: rgba(0, 0, 0, 0.8);
@@ -99,6 +113,10 @@ export const DownloadArea = styled.div`
   @media (min-width: 850px) {
     display: flex;
     margin-inline: 3.13rem 3.12rem;
+
+    img {
+      margin-inline: 0.6rem 0.3rem;
+    }
   }
 `
 

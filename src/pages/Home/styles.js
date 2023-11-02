@@ -1,7 +1,6 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import bgHomeMobile from '../../assets/bgHomeMobile.svg'
 import bgHomeWeb from '../../assets/bgHomeWeb.svg'
-import bullet from '../../assets/bulletList.svg'
 
 export const Body = styled.div`
   padding-bottom: 139px;
@@ -29,6 +28,20 @@ export const Main = styled.main`
 export const LogoContainer = styled.div`
   color: white;
   text-align: center;
+
+  opacity: 0;
+  animation: appear 1.4s forwards;
+
+  @keyframes appear {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 
   h2 {
     font-size: 0.75rem;
@@ -75,6 +88,9 @@ export const IntroducaoContainer = styled.div`
   color: white;
   margin-bottom: 112px;
 
+  opacity: 0;
+  animation: appear 1.4s forwards;
+
   p {
     font-family: 'Poppins', sans-serif; //mudar pro global theme
     font-size: 0.75rem;
@@ -97,12 +113,26 @@ export const IntroducaoContainer = styled.div`
   }
 `
 
-export const Button = styled.button`
+export const Button = styled.a`
   border: none;
   background: none;
   width: 11.5rem;
   height: 5.5rem;
   margin: auto;
+
+  opacity: 0;
+  animation: appearButton 1.5s forwards;
+
+  @keyframes appearButton {
+    0% {
+      transform: translateY(90px);
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 `
 
 export const BarraVertical = styled.div`

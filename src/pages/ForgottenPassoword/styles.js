@@ -11,6 +11,20 @@ export const MainContainer = styled.main`
 
   padding-inline: 3rem;
 
+  opacity: 0;
+  animation: appear 1.5s forwards;
+
+  @keyframes appear {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
   @media (min-width: 850px) {
     background: rgba(0, 0, 0, 0.8);
     border-radius: 32px;
@@ -63,5 +77,25 @@ export const Logo = styled.div`
       font-family: 'Poppins', sans-serif;
       margin-bottom: 2rem;
     }
+  }
+`
+
+export const Button = styled.button`
+  width: 279px;
+  height: 48px;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(to right, #36a7db, #5fcee9);
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+
+  cursor: pointer;
+  outline: none;
+
+  @media (min-width: 850px) {
+    width: 32rem;
+    height: 4rem;
   }
 `

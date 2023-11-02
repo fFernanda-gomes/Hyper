@@ -21,6 +21,20 @@ export const Main = styled.main`
   max-width: 1248px;
   padding: 0 3rem 4rem 3rem;
 
+  opacity: 0;
+  animation: public 1.5s forwards;
+
+  @keyframes public {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
   @media (min-width: 850px) {
     margin-bottom: 4rem;
     margin-inline: auto;

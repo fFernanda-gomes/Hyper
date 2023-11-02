@@ -34,6 +34,8 @@ import Cifrao from '../../assets/hardwares/cifrao.png'
 import { useKeenSlider } from 'keen-slider/react'
 import 'keen-slider/keen-slider.min.css'
 import { useState } from 'react'
+import { MenuMobile } from '../../components/Header/MenuMobile'
+import { Header } from '../../components/Header'
 
 export function Hardware() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -58,8 +60,16 @@ export function Hardware() {
     },
   })
 
+  const [menuIsVisible, setMenuIsVisible] = useState(false)
+
   return (
     <Align>
+      <MenuMobile
+        menuIsVisible={menuIsVisible}
+        setMenuIsVisible={setMenuIsVisible}
+      />
+      <Header setMenuIsVisible={setMenuIsVisible} />
+
       <Main>
         <Title>
           <span>Equipamentos</span> e Valores

@@ -38,6 +38,10 @@ export const InputContainer = styled.input`
   width: 100%;
   outline: none;
 
+  color: #ffffffb5;
+  font-size: 1rem;
+  font-weight: 500;
+
   &::placeholder {
     color: #ffffffb5;
     font-size: 1rem;
@@ -50,6 +54,11 @@ export const InputContainer = styled.input`
     background: rgba(217, 217, 217, 1);
     border: none;
     padding-block: 0.3rem 0;
+
+    font-family: 'Poppins', sans-serif;
+    color: #606060;
+    font-size: 1rem;
+    font-weight: 500;
 
     &::placeholder {
       color: #606060;

@@ -2,12 +2,26 @@ import styled from 'styled-components'
 
 export const ContainerMain = styled.div`
   @media (min-width: 950px) {
-    height: 110vh;
+    height: 155vh;
   }
 `
 
 export const Main = styled.main`
   padding: 0 3rem 5rem 3rem;
+
+  opacity: 0;
+  animation: objective 1.5s forwards;
+
+  @keyframes objective {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 
   @media (min-width: 950px) {
     background: rgba(0, 0, 0, 0.8);

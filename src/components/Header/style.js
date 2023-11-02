@@ -4,6 +4,20 @@ export const HeaderContainer = styled.header`
   padding: 32px 48px 72px 48px;
   font-family: 'Montserrat', sans-serif;
 
+  opacity: 0;
+  animation: appearMenu 1.7s forwards;
+
+  @keyframes appearMenu {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
   .menu {
     display: flex;
     justify-content: space-between;
@@ -34,6 +48,11 @@ export const HeaderContainer = styled.header`
 
       .list {
         display: none;
+      }
+
+      a:hover {
+        scale: 1.2;
+        transition: scale 0.3s;
       }
     }
   }
@@ -79,6 +98,40 @@ export const NavContainer = styled.nav`
       color: #fff;
       text-transform: uppercase;
       font-size: 14px;
+
+      display: inline-block;
+      position: relative;
+
+      height: 2.5rem;
+      line-height: 2.5rem;
+      transition: all 0.3s;
+    }
+
+    a:hover {
+      transition: all 0.2s;
+      color: ${({ theme }) => theme.colors.primary_medium};
+      scale: 1.2;
+      font-weight: 600;
+    }
+
+    a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 65%;
+      height: 1px;
+      background: #fff;
+
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.4s;
+    }
+
+    a:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+      transition: transform 0.4s;
     }
   }
 

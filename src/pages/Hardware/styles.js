@@ -27,12 +27,30 @@ export const DOTS = styled.div`
 `
 
 export const Align = styled.div`
-  height: 100vh;
+  height: 110vh;
+
+  @media (min-width: 850px) {
+    height: 125vh;
+  }
 `
 
 export const Main = styled.main`
   max-width: 1248px;
   padding: 0 3rem 5.75rem 3rem;
+
+  opacity: 0;
+  animation: hardwares 1.5s forwards;
+
+  @keyframes hardwares {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 
   .dots {
     display: flex;

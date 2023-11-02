@@ -15,6 +15,7 @@ export function Public() {
         setMenuIsVisible={setMenuIsVisible}
       />
       <Header setMenuIsVisible={setMenuIsVisible} />
+
       <Main>
         <div className="content">
           <Title>

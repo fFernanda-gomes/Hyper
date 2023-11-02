@@ -11,6 +11,9 @@ export const ButtonComponent = styled.button`
   font-size: 20px;
   font-family: 'Poppins', sans-serif;
 
+  cursor: pointer;
+  outline: none;
+
   @media (min-width: 850px) {
     width: 32rem;
     height: 4rem;

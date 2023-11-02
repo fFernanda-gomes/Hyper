@@ -1,11 +1,29 @@
 import styled from 'styled-components'
 
 export const Align = styled.div`
-  height: 125vh;
+  height: 200vh;
+
+  @media (min-width: 850px) {
+    height: 145vh;
+  }
 `
 
 export const Main = styled.main`
   padding: 0 3rem 6.94rem 3rem;
+
+  opacity: 0;
+  animation: operation 1.5s forwards;
+
+  @keyframes operation {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 
   @media (min-width: 850px) {
     border-radius: 2rem;

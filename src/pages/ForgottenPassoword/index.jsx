@@ -1,12 +1,31 @@
 import Input from '../../components/Input'
 import { ButtonForm } from '../../components/ButtonForm'
 import { Envelope, Key } from '@phosphor-icons/react'
-import { Align, Form, Logo, MainContainer, TitleContainer } from './styles'
+import {
+  Align,
+  Button,
+  Form,
+  Logo,
+  MainContainer,
+  TitleContainer,
+} from './styles'
 import LogoWeb from '../../assets/logo.svg'
+import { useState } from 'react'
+import { MenuMobile } from '../../components/Header/MenuMobile'
+import { Header } from '../../components/Header'
+import { PopUp } from '../../components/PopUp'
 
 export function ForgottenPassword() {
+  const [menuIsVisible, setMenuIsVisible] = useState(false)
+
   return (
     <Align>
+      <MenuMobile
+        menuIsVisible={menuIsVisible}
+        setMenuIsVisible={setMenuIsVisible}
+      />
+      <Header setMenuIsVisible={setMenuIsVisible} />
+
       <MainContainer>
         <TitleContainer>
           <Key size={60} color="#ffffff" weight="fill" />
@@ -28,7 +47,11 @@ export function ForgottenPassword() {
           />
         </Form>
 
-        <ButtonForm name="Enviar" />
+        <PopUp
+          name="Enviar"
+          title="E-mail enviado"
+          message="Tudo pronto para redefinir sua senha, olhe sua caixa de entrada do gmail"
+        />
       </MainContainer>
     </Align>
   )

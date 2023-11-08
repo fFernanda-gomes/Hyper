@@ -49,7 +49,8 @@ export function Home() {
         </IntroducaoContainer>
 
         <Button href="#diferencial">
-          <img src={ButtonMore} alt="" />
+          More
+          {/* <img src={ButtonMore} alt="" /> */}
         </Button>
 
         <DiferencialContainer id="diferencial">
@@ -68,9 +69,6 @@ export function Home() {
                 </ItemList>
                 <ItemList>
                   <strong>Modo Pomodoro personalizado</strong>
-                </ItemList>
-                <ItemList>
-                  <strong>Etiquetagem de Tarefas com Cores</strong>
                 </ItemList>
                 <ItemList>
                   <strong>Aplicativo Integrado</strong>

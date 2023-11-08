@@ -54,15 +54,6 @@ export function Operation() {
             </Text>
           </Mode2>
           <Separador>
-            <Mode3>
-              <H2>Etiquetagem de Tarefas com Cores</H2>
-              <Text>
-                Faça a organização visual de suas tarefas atribuindo cores a
-                cada uma, tornando a gestão do tempo intuitiva e eficiente. Isso
-                facilita a identificação e o acompanhamento das tarefas,
-                aprimorando sua produtividade.
-              </Text>
-            </Mode3>
             <Mode4>
               <H2>Modo Pomodoro personalizado</H2>
               <Text>

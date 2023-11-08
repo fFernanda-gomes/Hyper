@@ -125,12 +125,12 @@ export const ItemList = styled.li`
 
   @media (min-width: 950px) {
     font-size: 1.2rem;
-    line-height: 1.7rem;
+    line-height: 1.5rem;
 
     &::before {
       content: '•';
       color: #36a7db;
-      font-size: 2rem;
+      font-size: 1.8rem;
       display: inline-block;
       width: 0.6em;
       margin-left: -0.2em;

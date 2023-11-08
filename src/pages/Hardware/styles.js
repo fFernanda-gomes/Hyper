@@ -144,6 +144,9 @@ export const ProductContainer = styled.div`
   width: 7.875rem;
   height: 12rem;
 
+  position: relative;
+  overflow: hidden;
+
   @media (min-width: 850px) {
     width: 15.75rem;
     height: 24rem;
@@ -157,6 +160,86 @@ export const Info = styled.div`
   flex-direction: column;
   justify-content: end;
   padding: 1rem;
+
+  .more {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+
+    padding-block: 2rem;
+    padding-inline: 1rem;
+
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+
+    transform: translateY(110%);
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+
+    p {
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.1rem;
+    }
+  }
+
+  .preco {
+    font-size: 1.04rem;
+    margin-left: 0.2rem;
+  }
+
+  .mobileMore {
+    padding-block: 1rem;
+    padding-inline: 0.5rem;
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
+  .bateria {
+    padding-block: 0.8rem;
+    padding-inline: 0.4rem;
+
+    p {
+      font-size: 0.6rem;
+    }
+  }
+
+  .hidden {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.4s ease-in-out;
+  }
+
+  .hiddenH1 {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:hover {
+    .more {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    .hidden {
+      opacity: 0;
+      transform: translateY(110%);
+    }
+    .hiddenH1 {
+      opacity: 0;
+      transform: translateY(-150%);
+    }
+  }
 
   @media (min-width: 850px) {
     padding-bottom: 1.4rem;

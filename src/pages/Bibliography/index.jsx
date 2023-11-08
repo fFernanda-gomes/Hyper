@@ -36,9 +36,9 @@ export function Bibliography() {
             em um projeto cheio de potencial e esperançaS.{' '}
           </Text>
           <Text>
-            Inspirado pela tecnologia e pela inovação, o fundador decidiu criar
-            um dispositivo que pudesse oferecer um suporte personalizado para
-            pessoas com TDAH, ajudando-as a enfrentar os desafios de
+            Inspirado pela tecnologia e pela inovação, os fundadores decidiram
+            criar um dispositivo que pudesse oferecer um suporte personalizado
+            para pessoas com TDAH, ajudando-as a enfrentar os desafios de
             concentração e organização.{' '}
           </Text>
           <Text>

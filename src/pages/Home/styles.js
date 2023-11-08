@@ -114,11 +114,22 @@ export const IntroducaoContainer = styled.div`
 `
 
 export const Button = styled.a`
-  border: none;
+  border: 2px solid #fff;
+  color: #fff;
+  box-shadow: 0px 0px 12px 6px rgba(54, 167, 219, 0.9);
+  text-shadow: 0px 0px 12px rgba(54, 167, 219, 1);
+  text-decoration: none;
   background: none;
-  width: 11.5rem;
-  height: 5.5rem;
+  width: 10rem;
+  height: 4rem;
   margin: auto;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   opacity: 0;
   animation: appearButton 1.5s forwards;
@@ -132,6 +143,13 @@ export const Button = styled.a`
     100% {
       opacity: 1;
     }
+  }
+
+  &:hover {
+    background: #fff;
+    color: rgba(54, 167, 219, 1);
+    text-shadow: none;
+    line-height: 1.375rem;
   }
 `
 

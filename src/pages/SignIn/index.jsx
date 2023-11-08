@@ -1,11 +1,8 @@
-import { ButtonForm } from '../../components/ButtonForm'
-
 import Logo from '../../assets/logo.svg'
 
 import {
   Adds,
   Body,
-  Button,
   InputsContainer,
   InputsContent,
   LogoContainer,
@@ -71,6 +68,7 @@ export function SignIn() {
           title="Bom te ver aqui"
           message="E-mail e senha corretos. Parece que você não é tão esquecido quanto pensa"
         />
+
         <NavLink to="/Cadastro">Não possui uma conta?</NavLink>
       </MainContainer>
     </Body>

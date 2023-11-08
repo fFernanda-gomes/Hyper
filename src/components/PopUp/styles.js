@@ -26,6 +26,10 @@ export const Modal = styled.div`
     opacity: 1;
     visibility: visible;
   }
+
+  @media (min-width: 950px) {
+    border-radius: 50px;
+  }
 `
 
 export const Container = styled.div`
@@ -49,6 +53,7 @@ export const Container = styled.div`
     border: 0;
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
   .header h2 {
     font-family: 'Montserrat', sans-serif;

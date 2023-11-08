@@ -163,7 +163,7 @@ export const Adds = styled.div`
 
   @media (min-width: 850px) {
     label {
-      font-size: 1rem;
+      font-size: 1.125rem;
     }
   }
 `

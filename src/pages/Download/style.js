@@ -108,7 +108,12 @@ export const ImgContainerWeb = styled.div`
 
 export const DownloadArea = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+
+  img {
+    width: 152px;
+    height: 152px;
+  }
 
   @media (min-width: 850px) {
     display: flex;
@@ -116,6 +121,8 @@ export const DownloadArea = styled.div`
 
     img {
       margin-inline: 0.6rem 0.3rem;
+      width: 258px;
+      height: 258px;
     }
   }
 `
@@ -136,5 +143,33 @@ export const Button = styled.button`
     font-size: 0.9rem;
     font-weight: 500;
     margin-left: 0.53rem;
+  }
+
+  .webI {
+    display: none;
+  }
+
+  @media (min-width: 850px) {
+    padding: 0.38rem 2rem;
+    gap: 0.15rem;
+    cursor: pointer;
+
+    span {
+      font-size: 1rem;
+      font-weight: 500;
+      margin-left: 0.53rem;
+    }
+
+    .webI {
+      display: flex;
+    }
+
+    .mobileI {
+      display: none;
+    }
+
+    &:hover {
+      background: rgba(54, 167, 219, 1);
+    }
   }
 `

@@ -5,7 +5,6 @@ import peca from '../../assets/peca.svg'
 import brain from '../../assets/brain.svg'
 
 import {
-  Button,
   FirstContainer,
   SecondContainer,
   ThirdContainer,
@@ -22,6 +21,12 @@ import { useState } from 'react'
 
 export function Objective() {
   const [menuIsVisible, setMenuIsVisible] = useState(false)
+
+  /* 
+    <Button>
+      <ArrowRight size={28} color="#ffffff" weight="light" />
+    </Button> 
+  */
 
   return (
     <ContainerMain>
@@ -47,9 +52,6 @@ export function Objective() {
               Isso possibilita que os indivíduos se dediquem mais às suas
               atividades, obtendo resultados mais satisfatórios.
             </p>
-            <Button>
-              <ArrowRight size={28} color="#ffffff" weight="light" />
-            </Button>
           </FirstContainer>
 
           <SecondContainer>
@@ -58,9 +60,6 @@ export function Objective() {
               Potencializar o foco e a concentração, permitindo que os usuários
               realizem suas tarefas com maior eficiência.
             </p>
-            <Button>
-              <ArrowRight size={28} color="#ffffff" weight="light" />
-            </Button>
           </SecondContainer>
 
           <ThirdContainer>
@@ -69,9 +68,6 @@ export function Objective() {
               Capacitar os usuários a gerenciar seu TDAH de forma independente,
               proporcionando maior controle sobre sua própria vida.
             </p>
-            <Button>
-              <ArrowRight size={28} color="#ffffff" weight="light" />
-            </Button>
           </ThirdContainer>
 
           <FourthContainer>
@@ -82,9 +78,6 @@ export function Objective() {
                 criando um ambiente propício para um maior equilíbrio emocional
                 e mental.
               </p>
-              <Button>
-                <ArrowRight size={28} color="#ffffff" weight="light" />
-              </Button>
             </div>
             <img src={brain} alt="" className="fourthImg" />
           </FourthContainer>

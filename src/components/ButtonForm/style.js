@@ -17,5 +17,10 @@ export const ButtonComponent = styled.button`
   @media (min-width: 850px) {
     width: 32rem;
     height: 4rem;
+
+    &:hover {
+      text-shadow: 0px 0px 12px #fff;
+      box-shadow: 0px 0px 12px 6px rgba(54, 167, 219, 0.4);
+    }
   }
 `

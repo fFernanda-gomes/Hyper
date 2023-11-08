@@ -6,7 +6,7 @@ export const Body = styled.div`
     height: 130vh;
   }
   @media (min-width: 1500px) {
-    height: 115vh;
+    height: 116vh;
   }
 `
 
@@ -81,6 +81,10 @@ export const MainContainer = styled.main`
     form {
       margin-bottom: 1.5rem;
     }
+
+    a {
+      font-size: 1.125rem;
+    }
   }
 `
 
@@ -135,11 +139,11 @@ export const Adds = styled.div`
     }
 
     label {
-      font-size: 1rem;
+      font-size: 1.12rem;
     }
 
     a {
-      font-size: 1rem;
+      font-size: 1.12rem;
     }
   }
 `
